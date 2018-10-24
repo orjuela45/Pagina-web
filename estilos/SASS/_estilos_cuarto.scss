@@ -1,0 +1,53 @@
+*{
+    margin: 0%;
+}
+body{
+    font-family: 'Teko', sans-serif;
+    color: white;
+    background-color: #F8F0FB;
+}
+header{
+    display: flex;
+    background-image: url(../../imagenes/fondo.jpg);
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+
+    .titulo{
+        display: flex;
+        width: 50%;
+        height: 80%;
+        font-size: 5em;
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+    .menu{
+        display: inline-flex;
+        width: 90%;
+        height: 100%;
+        justify-content: flex-end;
+        font-size: 2em;
+        text-align: center;
+    }
+    .menu ul{
+        margin: 0em;
+        padding: 0em;
+        background-color: rgba(0,0,0,.5);
+    }
+    .menu ul li{
+        height: 25%;
+        display: block;
+    }
+    .menu ul li a{
+        height: 35%;
+        color: white;
+        display: flex;
+        padding: 1.5em 1em;
+        text-decoration: none;
+        justify-content: center;
+        transition-duration: 1.s;
+    }
+    .menu ul li a:hover{
+        background-color: #993399;
+    }
+}

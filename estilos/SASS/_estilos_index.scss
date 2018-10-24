@@ -1,0 +1,185 @@
+*{
+    margin: 0%;
+}
+body{
+    font-family: 'Teko', sans-serif;
+    color: white;
+    background-color: #F1E4E8;
+}
+header{
+    display: flex;
+    background-image: url(../../imagenes/fondo.jpg);
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+
+    .titulo{
+        display: flex;
+        color: white;
+        width: 30%;
+        height: 100%;
+        font-size: 3.5em;
+        padding: 0em 1em;
+    }
+    .menu{
+        display: inline-flex;
+        width: 70%;
+        height: 100%;
+        justify-content: flex-end;
+        font-size: 2em;
+        text-align: center;
+    }
+    .menu ul{
+        margin: 0em;
+        padding: 0em;
+        background-color: rgba(0,0,0,.5);
+    }
+    .menu ul li{
+        height: 25%;
+        display: block;
+    }
+    .menu ul li a{
+        height: 35%;
+        color: white;
+        display: flex;
+        padding: 1.5em 1em;
+        text-decoration: none;
+        justify-content: center;
+        transition-duration: 0.5s;
+    }
+    .menu ul li a:hover{
+        background-color: #993399;
+    }
+}
+.informacion{
+    h2{
+        margin-bottom: 1em;
+    }
+    .general1{ 
+        display: flex;
+        width: 50%;
+        height: 38%;
+        border-radius: 5em;
+        background: #9000B3;
+        margin-left: 5em;
+        margin-top: 2em;
+    
+        .imagen1{
+            display: flex;
+            width: 50%;
+            height: 100%;
+            justify-content: center;
+            margin: 0;
+        }
+        .texto1{
+            padding: 1.5em 2em ;
+            font-size: 1.6em;
+            text-align: justify;
+            width: 50%;
+            justify-content: center;
+        }
+    }
+    .general2{ 
+        display: flex;
+        width: 50%;
+        height: 38%;
+        border-radius: 5em;
+        background: #9000B3;
+        margin-left: 45%;
+        margin-top: 2em;
+    
+        .imagen2{
+            display: flex;
+            width: 53%;
+            height: 100%;
+            justify-content: center;
+        }
+        .texto2{
+            padding: 1.5em 2em ;
+            font-size: 1.6em;
+            text-align: justify;
+            width: 50%;
+        }
+    }
+    .general3{ 
+        display: flex;
+        width: 50%;
+        height: 38%;
+        border-radius: 5em;
+        background: #9000B3;
+        margin-left: 5em;
+        margin-top: 2em;
+    
+        .imagen3{
+            display: flex;
+            width: 50%;
+            height: 100%;
+            justify-content: center;
+        }
+        .texto3{
+            padding: 1.5em 2em ;
+            font-size: 1.5em;
+            text-align: justify;
+            width: 50%;
+        }
+    }
+    .general4{ 
+        display: flex;
+        width: 50%;
+        height: 38%;
+        border-radius: 5em;
+        background: #9000B3;
+        margin-left: 45%;
+        margin-top: 2em;
+    
+        .imagen4{
+            display: flex;
+            width: 53%;
+            height: 100%;
+            justify-content: center;
+        }
+        .texto4{
+            padding: 1.5em 2em ;
+            font-size: 1.4em;
+            text-align: justify;
+            width: 50%;
+        }
+    }
+}
+footer{
+    background: black;
+    padding: 1em;
+    margin-top: 2em;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+    header{
+        flex-direction: column-reverse;
+        .titulo{
+            display: flex;
+            width: 34.2%;
+            font-size: 2em;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0em 1em;
+            margin-left: 10em;
+            margin-top: 8em;
+        }
+        .menu{
+            display: inline-flex;
+            width: 100%;
+            height: 31%;
+            ul{
+                width: 100%;
+            }
+            ul li{
+                display: inline-flex;
+                align-items: center;
+                margin: 0.4em;
+            }
+        }
+    }
+}
