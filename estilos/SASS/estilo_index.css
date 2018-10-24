@@ -241,6 +241,7 @@ footer {
   }
   header .menu ul {
     width: 100%;
+    height: 44%;
   }
   header .menu ul li {
     display: -webkit-inline-box;
@@ -250,6 +251,24 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     margin: 0.4em;
+  }
+  .informacion {
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .informacion .general1, .informacion .general2, .informacion .general3, .informacion .general4 {
+    width: 80%;
+  }
+  .informacion .general2, .informacion .general3, .informacion .general4 {
+    font-size: 0.84em;
   }
 }
 /*# sourceMappingURL=estilo_index.css.map */
