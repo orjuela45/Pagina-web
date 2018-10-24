@@ -20,6 +20,7 @@ header{
         font-size: 5em;
         margin-top: 1em;
         margin-left: 1em;
+        color: white;
     }
     .menu{
         display: inline-flex;
@@ -45,7 +46,7 @@ header{
         padding: 1.5em 1em;
         text-decoration: none;
         justify-content: center;
-        transition-duration: 1.s;
+        transition-duration: .5s;
     }
     .menu ul li a:hover{
         background-color: #993399;
