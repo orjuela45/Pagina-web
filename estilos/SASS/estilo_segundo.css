@@ -71,4 +71,50 @@ header .menu ul li a {
 header .menu ul li a:hover {
   background-color: #993399;
 }
+
+@media screen and (max-width: 1100px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  header .titulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 34.2%;
+    font-size: 2em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 0em 1em;
+    margin-left: 10em;
+    margin-top: 8em;
+  }
+  header .menu {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    height: 31%;
+  }
+  header .menu ul {
+    width: 100%;
+    height: 2.3em;
+  }
+  header .menu ul li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0.4em;
+  }
+}
 /*# sourceMappingURL=estilo_segundo.css.map */
