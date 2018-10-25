@@ -4,7 +4,7 @@
 body{
     font-family: 'Teko', sans-serif;
     color: white;
-    background-color: #F8F0FB;
+    background-color: #F1E4E8;
 }
 header{
     display: flex;
@@ -51,6 +51,41 @@ header{
         background-color: #993399;
     }
 }
+
+footer{
+    background: black;
+    padding: 1em;
+    font-size: 2.5em;
+    text-align: center;
+}
+.partes1, .partes2, .partes3{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 1em;
+    h1{
+        margin-top: 1em;
+        font-size: 2.3em;
+    }
+    img{
+        margin-top: 1em;
+        border-radius: 200%;
+    }
+    .procesador, .ram, .motherboard, .fuente, .disipador, .disco, .tarjeta, .chasis, .ventilador, .refrigeracion{
+        width: 23%;
+        background: #993399;
+        margin: 1% 2%;
+        text-align: center;
+        transition-duration: 1s;
+        border-radius: 10%;
+    }
+    .disipador:hover, .disco:hover, .tarjeta:hover, .chasis:hover, .procesador:hover, .ram:hover, .motherboard:hover, .fuente:hover, .ventilador:hover, .refrigeracion:hover{
+        transform: scale(1.1);
+    }
+}
+.informacion_1, .informacion_2, .informacion_3{
+    display: none;
+}
 @media screen and (max-width: 1100px){
     header{
         flex-direction: column-reverse;
@@ -78,6 +113,13 @@ header{
                 align-items: center;
                 margin: 0.4em;
             }
+        }
+    }
+    .partes1, .partes2, .partes3{
+        img{
+            margin-top: 1em;
+            border-radius: 200%;
+            width: 100%;
         }
     }
 }

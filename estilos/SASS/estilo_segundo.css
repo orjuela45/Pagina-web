@@ -5,7 +5,7 @@
 body {
   font-family: 'Teko', sans-serif;
   color: white;
-  background-color: #F8F0FB;
+  background-color: #F1E4E8;
 }
 
 header {
@@ -72,6 +72,53 @@ header .menu ul li a:hover {
   background-color: #993399;
 }
 
+footer {
+  background: black;
+  padding: 1em;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.partes1, .partes2, .partes3 {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
+}
+
+.partes1 h1, .partes2 h1, .partes3 h1 {
+  margin-top: 1em;
+  font-size: 2.3em;
+}
+
+.partes1 img, .partes2 img, .partes3 img {
+  margin-top: 1em;
+  border-radius: 200%;
+}
+
+.partes1 .procesador, .partes1 .ram, .partes1 .motherboard, .partes1 .fuente, .partes1 .disipador, .partes1 .disco, .partes1 .tarjeta, .partes1 .chasis, .partes1 .ventilador, .partes1 .refrigeracion, .partes2 .procesador, .partes2 .ram, .partes2 .motherboard, .partes2 .fuente, .partes2 .disipador, .partes2 .disco, .partes2 .tarjeta, .partes2 .chasis, .partes2 .ventilador, .partes2 .refrigeracion, .partes3 .procesador, .partes3 .ram, .partes3 .motherboard, .partes3 .fuente, .partes3 .disipador, .partes3 .disco, .partes3 .tarjeta, .partes3 .chasis, .partes3 .ventilador, .partes3 .refrigeracion {
+  width: 23%;
+  background: #993399;
+  margin: 1% 2%;
+  text-align: center;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  border-radius: 10%;
+}
+
+.partes1 .disipador:hover, .partes1 .disco:hover, .partes1 .tarjeta:hover, .partes1 .chasis:hover, .partes1 .procesador:hover, .partes1 .ram:hover, .partes1 .motherboard:hover, .partes1 .fuente:hover, .partes1 .ventilador:hover, .partes1 .refrigeracion:hover, .partes2 .disipador:hover, .partes2 .disco:hover, .partes2 .tarjeta:hover, .partes2 .chasis:hover, .partes2 .procesador:hover, .partes2 .ram:hover, .partes2 .motherboard:hover, .partes2 .fuente:hover, .partes2 .ventilador:hover, .partes2 .refrigeracion:hover, .partes3 .disipador:hover, .partes3 .disco:hover, .partes3 .tarjeta:hover, .partes3 .chasis:hover, .partes3 .procesador:hover, .partes3 .ram:hover, .partes3 .motherboard:hover, .partes3 .fuente:hover, .partes3 .ventilador:hover, .partes3 .refrigeracion:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.informacion_1, .informacion_2, .informacion_3 {
+  display: none;
+}
+
 @media screen and (max-width: 1100px) {
   header {
     -webkit-box-orient: vertical;
@@ -115,6 +162,11 @@ header .menu ul li a:hover {
         -ms-flex-align: center;
             align-items: center;
     margin: 0.4em;
+  }
+  .partes1 img, .partes2 img, .partes3 img {
+    margin-top: 1em;
+    border-radius: 200%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=estilo_segundo.css.map */
