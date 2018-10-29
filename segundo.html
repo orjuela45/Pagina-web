@@ -5,7 +5,16 @@
     <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/jquery-3.3.1.min.js"></script>    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).on("ready",function(){
+            $(".procesador").hover(function(){
+                $(".procesador").css(
+                    "background", "red"
+                );
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -37,10 +46,10 @@
     </section>
     <section class="informacion_1">
             <div class="informacion1">
-                    <p>hola quey</p>
+                    <p>info de procesador</p>
             </div>
             <div class="informacion2">
-                    <p>hola quey</p>
+                    <p>info de ram</p>
             </div>
             <div class="informacion3">
                     <p>hola quey</p>
@@ -86,16 +95,15 @@
         </div>
     </section>
     <section class="informacion_3">
-            <div class="informacion1">
+            <div class="informacion9">
                     <p>hola quey</p>
             </div>
-            <div class="informacion2">
+            <div class="informacion10">
                     <p>hola quey</p>
             </div>
     </section>
     <footer>
         <p>CREADORES MIGUEL ORJUELA Y JULIO RODRIGUEZ</p>
     </footer>
-    <script src="js/segundo.js"></script>
 </body>
 </html>
