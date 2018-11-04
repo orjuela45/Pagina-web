@@ -12,10 +12,11 @@ a{
 }
 header{
     display: flex;
-    background-image: url(../../imagenes/fondo.jpg);
+    background-image: url(../../imagenes/fondos/fondo2.jpg);
     width: 100%;
     height: 60%;
     background-size: cover;
+    background-position: center;
 
     .titulo{
         display: flex;
@@ -52,7 +53,7 @@ header{
         transition-duration: 0.5s;
     }
     .menu ul li a:hover{
-        background-color: #993399;
+        background-color: #2f97c1;
     }
 }
 
@@ -78,11 +79,12 @@ footer{
     }
     .procesador, .ram, .motherboard, .fuente, .disipador, .disco, .tarjeta, .chasis, .ventilador, .refrigeracion{
         width: 23%;
-        background: #993399;
+        background: #2f97c1;
         margin: 1% 2%;
         text-align: center;
         transition-duration: 1s;
         border-radius: 10%;
+        border: 0.2em solid black;
     }
     .disipador:hover, .disco:hover, .tarjeta:hover, .chasis:hover, .procesador:hover, .ram:hover, .motherboard:hover, .fuente:hover, .ventilador:hover, .refrigeracion:hover{
         transform: scale(1.1);
@@ -123,10 +125,16 @@ footer{
             font-size: 4em;
             margin-bottom: -0.5em;
         }
-        img{
-            margin-top: 3em;
-            margin-bottom: 2em;
-            align-self: center;
+        .imagenes{
+            display: flex;
+            justify-content: center;
+            img{
+                margin-top: 3em;
+                margin-bottom: 2em;
+                margin-right: 3em;
+                width: 40%;
+                align-self: center;
+            }
         }
     }
 }
@@ -164,6 +172,57 @@ footer{
             margin-top: 1em;
             border-radius: 200%;
             width: 100%;
+        }
+    }
+    .informacion_1, .informacion_2, .informacion_3{
+        display: flex;
+        justify-content: center;
+        .informacion1, .informacion2, .informacion3, .informacion4, .informacion5, .informacion6, .informacion7, .informacion8, .informacion9, .informacion10, {
+            margin-top: 1em;
+            display: none;
+            width: 95%;
+            background: #2f97c1;
+            border-radius: 2em;
+            border: 0.3em solid black;
+        }
+        .texto{
+            width: 50%;
+            margin: auto;;
+            p{
+                margin: 2em;
+                font-size: 1.7em;
+                text-align: justify;
+            }
+            h1{
+                text-align: center;
+                margin-top: 0.2em;
+                font-size: 3em;
+                margin-bottom: -1em;
+            }
+        }
+        .marcas{
+            display: flex;
+            flex-direction: column;
+            width:50%;
+            h1{
+                text-align: center;
+                margin-top: 0.2em;
+                font-size: 3em;
+                margin-bottom: -0.5em;
+            }
+            .imagenes{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                img{
+                    margin-top: 2em;
+                    margin-bottom: 0em;
+                    margin-right: 3em;
+                    width: 60%;
+                    height: 50%;;
+                    align-self: center;
+                }
+            }
         }
     }
 }

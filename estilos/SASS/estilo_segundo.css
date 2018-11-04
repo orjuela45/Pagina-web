@@ -17,10 +17,11 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(../../imagenes/fondo.jpg);
+  background-image: url(../../imagenes/fondos/fondo2.jpg);
   width: 100%;
   height: 60%;
   background-size: cover;
+  background-position: center;
 }
 
 header .titulo {
@@ -74,7 +75,7 @@ header .menu ul li a {
 }
 
 header .menu ul li a:hover {
-  background-color: #993399;
+  background-color: #2f97c1;
 }
 
 footer {
@@ -108,12 +109,13 @@ footer {
 
 .partes1 .procesador, .partes1 .ram, .partes1 .motherboard, .partes1 .fuente, .partes1 .disipador, .partes1 .disco, .partes1 .tarjeta, .partes1 .chasis, .partes1 .ventilador, .partes1 .refrigeracion, .partes2 .procesador, .partes2 .ram, .partes2 .motherboard, .partes2 .fuente, .partes2 .disipador, .partes2 .disco, .partes2 .tarjeta, .partes2 .chasis, .partes2 .ventilador, .partes2 .refrigeracion, .partes3 .procesador, .partes3 .ram, .partes3 .motherboard, .partes3 .fuente, .partes3 .disipador, .partes3 .disco, .partes3 .tarjeta, .partes3 .chasis, .partes3 .ventilador, .partes3 .refrigeracion {
   width: 23%;
-  background: #993399;
+  background: #2f97c1;
   margin: 1% 2%;
   text-align: center;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   border-radius: 10%;
+  border: 0.2em solid black;
 }
 
 .partes1 .disipador:hover, .partes1 .disco:hover, .partes1 .tarjeta:hover, .partes1 .chasis:hover, .partes1 .procesador:hover, .partes1 .ram:hover, .partes1 .motherboard:hover, .partes1 .fuente:hover, .partes1 .ventilador:hover, .partes1 .refrigeracion:hover, .partes2 .disipador:hover, .partes2 .disco:hover, .partes2 .tarjeta:hover, .partes2 .chasis:hover, .partes2 .procesador:hover, .partes2 .ram:hover, .partes2 .motherboard:hover, .partes2 .fuente:hover, .partes2 .ventilador:hover, .partes2 .refrigeracion:hover, .partes3 .disipador:hover, .partes3 .disco:hover, .partes3 .tarjeta:hover, .partes3 .chasis:hover, .partes3 .procesador:hover, .partes3 .ram:hover, .partes3 .motherboard:hover, .partes3 .fuente:hover, .partes3 .ventilador:hover, .partes3 .refrigeracion:hover {
@@ -174,9 +176,20 @@ footer {
   margin-bottom: -0.5em;
 }
 
-.informacion_1 .marcas img, .informacion_2 .marcas img, .informacion_3 .marcas img {
+.informacion_1 .marcas .imagenes, .informacion_2 .marcas .imagenes, .informacion_3 .marcas .imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.informacion_1 .marcas .imagenes img, .informacion_2 .marcas .imagenes img, .informacion_3 .marcas .imagenes img {
   margin-top: 3em;
   margin-bottom: 2em;
+  margin-right: 3em;
+  width: 40%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -230,6 +243,75 @@ footer {
     margin-top: 1em;
     border-radius: 200%;
     width: 100%;
+  }
+  .informacion_1, .informacion_2, .informacion_3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .informacion_1 .informacion1, .informacion_1 .informacion2, .informacion_1 .informacion3, .informacion_1 .informacion4, .informacion_1 .informacion5, .informacion_1 .informacion6, .informacion_1 .informacion7, .informacion_1 .informacion8, .informacion_1 .informacion9, .informacion_1 .informacion10, .informacion_2 .informacion1, .informacion_2 .informacion2, .informacion_2 .informacion3, .informacion_2 .informacion4, .informacion_2 .informacion5, .informacion_2 .informacion6, .informacion_2 .informacion7, .informacion_2 .informacion8, .informacion_2 .informacion9, .informacion_2 .informacion10, .informacion_3 .informacion1, .informacion_3 .informacion2, .informacion_3 .informacion3, .informacion_3 .informacion4, .informacion_3 .informacion5, .informacion_3 .informacion6, .informacion_3 .informacion7, .informacion_3 .informacion8, .informacion_3 .informacion9, .informacion_3 .informacion10 {
+    margin-top: 1em;
+    display: none;
+    width: 95%;
+    background: #2f97c1;
+    border-radius: 2em;
+    border: 0.3em solid black;
+  }
+  .informacion_1 .texto, .informacion_2 .texto, .informacion_3 .texto {
+    width: 50%;
+    margin: auto;
+  }
+  .informacion_1 .texto p, .informacion_2 .texto p, .informacion_3 .texto p {
+    margin: 2em;
+    font-size: 1.7em;
+    text-align: justify;
+  }
+  .informacion_1 .texto h1, .informacion_2 .texto h1, .informacion_3 .texto h1 {
+    text-align: center;
+    margin-top: 0.2em;
+    font-size: 3em;
+    margin-bottom: -1em;
+  }
+  .informacion_1 .marcas, .informacion_2 .marcas, .informacion_3 .marcas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+  }
+  .informacion_1 .marcas h1, .informacion_2 .marcas h1, .informacion_3 .marcas h1 {
+    text-align: center;
+    margin-top: 0.2em;
+    font-size: 3em;
+    margin-bottom: -0.5em;
+  }
+  .informacion_1 .marcas .imagenes, .informacion_2 .marcas .imagenes, .informacion_3 .marcas .imagenes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .informacion_1 .marcas .imagenes img, .informacion_2 .marcas .imagenes img, .informacion_3 .marcas .imagenes img {
+    margin-top: 2em;
+    margin-bottom: 0em;
+    margin-right: 3em;
+    width: 60%;
+    height: 50%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 /*# sourceMappingURL=estilo_segundo.css.map */
