@@ -8,7 +8,7 @@ body{
 }
 header{
     display: flex;
-    background-image: url(../../imagenes/fondo.jpg);
+    background-image: url(../../imagenes/fondos/fondo3.jpg);
     width: 100%;
     height: 60%;
     background-size: cover;
@@ -48,7 +48,7 @@ header{
         transition-duration: 0.5s;
     }
     .menu ul li a:hover{
-        background-color: #993399;
+        background-color: #de1a1a;
     }
 }
 .panel{

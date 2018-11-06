@@ -12,10 +12,11 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(../../imagenes/fondo.jpg);
+  background-image: url(../../imagenes/fondos/fondo4.jpg);
   width: 100%;
   height: 60%;
   background-size: cover;
+  background-position: center;
 }
 
 header .titulo {
@@ -24,8 +25,8 @@ header .titulo {
   display: flex;
   width: 50%;
   height: 80%;
-  font-size: 5em;
-  margin-top: 1em;
+  font-size: 4em;
+  margin-top: 0em;
   margin-left: 1em;
   color: white;
 }
@@ -70,7 +71,67 @@ header .menu ul li a {
 }
 
 header .menu ul li a:hover {
-  background-color: #993399;
+  background-color: #2a9134;
+}
+
+.padre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 98%;
+  margin: auto;
+  border-radius: 1em;
+  height: 50%;
+  margin-top: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #2a9134;
+}
+
+.padre .titulo {
+  margin-top: 2em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 90%;
+  height: 25%;
+}
+
+.padre .titulo .devolver, .padre .titulo .siguiente {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.padre .titulo .devolver:hover, .padre .titulo .siguiente:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.padre .titulo .montar, .padre .titulo .mantenimiento, .padre .titulo .perifericos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 7em;
+}
+
+footer {
+  background: black;
+  padding: 1em;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 2em;
 }
 
 @media screen and (max-width: 1100px) {
