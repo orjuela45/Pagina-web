@@ -55,18 +55,20 @@ header{
 }
 .padre{
     display: flex;
+    flex-direction: column;
     width: 98%;
     margin: auto;
     border-radius: 1em;
-    height: 50%;
+    height: 100%;
     margin-top: 2em;
     justify-content: center;
     background: #2a9134;
     .titulo{
+        margin: auto;
         margin-top: 2em;
         display: inline-flex;
         width: 90%;
-        height: 25%;
+        height: 10em;
         .devolver, .siguiente{
             display: flex;
             width: 10%;
@@ -81,6 +83,22 @@ header{
             justify-content: center;
             align-items: center;
             font-size: 7em;
+        }
+    }
+    .informacion{
+        display: flex;
+        width: 98%;
+        margin: auto;
+        margin-top: 2em;
+        .info_montar{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: red;
+            .videos, .textos, .programas{
+                margin: 1em;
+                margin-left: 2em;
+            }
         }
     }
 }

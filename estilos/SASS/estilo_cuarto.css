@@ -78,10 +78,14 @@ header .menu ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 98%;
   margin: auto;
   border-radius: 1em;
-  height: 50%;
+  height: 100%;
   margin-top: 2em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -90,12 +94,13 @@ header .menu ul li a:hover {
 }
 
 .padre .titulo {
+  margin: auto;
   margin-top: 2em;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 90%;
-  height: 25%;
+  height: 10em;
 }
 
 .padre .titulo .devolver, .padre .titulo .siguiente {
@@ -124,6 +129,32 @@ header .menu ul li a:hover {
       -ms-flex-align: center;
           align-items: center;
   font-size: 7em;
+}
+
+.padre .informacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 98%;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.padre .informacion .info_montar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: red;
+}
+
+.padre .informacion .info_montar .videos, .padre .informacion .info_montar .textos, .padre .informacion .info_montar .programas {
+  margin: 1em;
+  margin-left: 2em;
 }
 
 footer {
