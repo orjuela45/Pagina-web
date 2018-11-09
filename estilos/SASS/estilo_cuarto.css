@@ -71,7 +71,7 @@ header .menu ul li a {
 }
 
 header .menu ul li a:hover {
-  background-color: #2a9134;
+  background-color: #1a6922;
 }
 
 .padre {
@@ -85,12 +85,12 @@ header .menu ul li a:hover {
   width: 98%;
   margin: auto;
   border-radius: 1em;
-  height: 100%;
+  border: 0.1em solid rgba(0, 0, 0, 0.301);
   margin-top: 2em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #2a9134;
+  background: #1a6922;
 }
 
 .padre .titulo {
@@ -100,7 +100,7 @@ header .menu ul li a:hover {
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 90%;
-  height: 10em;
+  height: 15%;
 }
 
 .padre .titulo .devolver, .padre .titulo .siguiente {
@@ -138,9 +138,19 @@ header .menu ul li a:hover {
   width: 98%;
   margin: auto;
   margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5em;
 }
 
-.padre .informacion .info_montar {
+.padre .informacion .info_montar, .padre .informacion .info_mantenimiento, .padre .informacion .info_perifericos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.padre .informacion .info_montar .videos, .padre .informacion .info_montar .programas, .padre .informacion .info_mantenimiento .videos, .padre .informacion .info_mantenimiento .programas, .padre .informacion .info_perifericos .videos, .padre .informacion .info_perifericos .programas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,13 +158,93 @@ header .menu ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  background-color: red;
+  width: 50%;
+  margin-left: 3em;
 }
 
-.padre .informacion .info_montar .videos, .padre .informacion .info_montar .textos, .padre .informacion .info_montar .programas {
+.padre .informacion .info_montar .videos .titulo2, .padre .informacion .info_montar .programas .titulo2, .padre .informacion .info_mantenimiento .videos .titulo2, .padre .informacion .info_mantenimiento .programas .titulo2, .padre .informacion .info_perifericos .videos .titulo2, .padre .informacion .info_perifericos .programas .titulo2 {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.padre .informacion .info_montar .videos .titulo2 h1, .padre .informacion .info_montar .programas .titulo2 h1, .padre .informacion .info_mantenimiento .videos .titulo2 h1, .padre .informacion .info_mantenimiento .programas .titulo2 h1, .padre .informacion .info_perifericos .videos .titulo2 h1, .padre .informacion .info_perifericos .programas .titulo2 h1 {
+  margin: auto;
+  font-size: 5em;
+}
+
+.padre .informacion .info_montar .videos .cosas, .padre .informacion .info_montar .programas .cosas, .padre .informacion .info_mantenimiento .videos .cosas, .padre .informacion .info_mantenimiento .programas .cosas, .padre .informacion .info_perifericos .videos .cosas, .padre .informacion .info_perifericos .programas .cosas {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.padre .informacion .info_montar .videos .cosas iframe, .padre .informacion .info_montar .programas .cosas iframe, .padre .informacion .info_mantenimiento .videos .cosas iframe, .padre .informacion .info_mantenimiento .programas .cosas iframe, .padre .informacion .info_perifericos .videos .cosas iframe, .padre .informacion .info_perifericos .programas .cosas iframe {
+  width: 500;
   margin: 1em;
-  margin-left: 2em;
+  margin-bottom: 2em;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.padre .informacion .info_montar .videos .cosas iframe:hover, .padre .informacion .info_montar .programas .cosas iframe:hover, .padre .informacion .info_mantenimiento .videos .cosas iframe:hover, .padre .informacion .info_mantenimiento .programas .cosas iframe:hover, .padre .informacion .info_perifericos .videos .cosas iframe:hover, .padre .informacion .info_perifericos .programas .cosas iframe:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.padre .informacion .info_montar .videos .cosas p, .padre .informacion .info_montar .programas .cosas p, .padre .informacion .info_mantenimiento .videos .cosas p, .padre .informacion .info_mantenimiento .programas .cosas p, .padre .informacion .info_perifericos .videos .cosas p, .padre .informacion .info_perifericos .programas .cosas p {
+  margin: auto;
+  font-size: 2em;
+  text-align: justify;
+  width: 80%;
+}
+
+.padre .informacion .info_montar .descripcion, .padre .informacion .info_montar .mouse, .padre .informacion .info_montar .teclado, .padre .informacion .info_montar .mouse-pad, .padre .informacion .info_montar .auriculares, .padre .informacion .info_montar .monitor, .padre .informacion .info_mantenimiento .descripcion, .padre .informacion .info_mantenimiento .mouse, .padre .informacion .info_mantenimiento .teclado, .padre .informacion .info_mantenimiento .mouse-pad, .padre .informacion .info_mantenimiento .auriculares, .padre .informacion .info_mantenimiento .monitor, .padre .informacion .info_perifericos .descripcion, .padre .informacion .info_perifericos .mouse, .padre .informacion .info_perifericos .teclado, .padre .informacion .info_perifericos .mouse-pad, .padre .informacion .info_perifericos .auriculares, .padre .informacion .info_perifericos .monitor {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.padre .informacion .info_montar .descripcion .titulo3, .padre .informacion .info_montar .mouse .titulo3, .padre .informacion .info_montar .teclado .titulo3, .padre .informacion .info_montar .mouse-pad .titulo3, .padre .informacion .info_montar .auriculares .titulo3, .padre .informacion .info_montar .monitor .titulo3, .padre .informacion .info_mantenimiento .descripcion .titulo3, .padre .informacion .info_mantenimiento .mouse .titulo3, .padre .informacion .info_mantenimiento .teclado .titulo3, .padre .informacion .info_mantenimiento .mouse-pad .titulo3, .padre .informacion .info_mantenimiento .auriculares .titulo3, .padre .informacion .info_mantenimiento .monitor .titulo3, .padre .informacion .info_perifericos .descripcion .titulo3, .padre .informacion .info_perifericos .mouse .titulo3, .padre .informacion .info_perifericos .teclado .titulo3, .padre .informacion .info_perifericos .mouse-pad .titulo3, .padre .informacion .info_perifericos .auriculares .titulo3, .padre .informacion .info_perifericos .monitor .titulo3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.padre .informacion .info_montar .descripcion .titulo3 h1, .padre .informacion .info_montar .mouse .titulo3 h1, .padre .informacion .info_montar .teclado .titulo3 h1, .padre .informacion .info_montar .mouse-pad .titulo3 h1, .padre .informacion .info_montar .auriculares .titulo3 h1, .padre .informacion .info_montar .monitor .titulo3 h1, .padre .informacion .info_mantenimiento .descripcion .titulo3 h1, .padre .informacion .info_mantenimiento .mouse .titulo3 h1, .padre .informacion .info_mantenimiento .teclado .titulo3 h1, .padre .informacion .info_mantenimiento .mouse-pad .titulo3 h1, .padre .informacion .info_mantenimiento .auriculares .titulo3 h1, .padre .informacion .info_mantenimiento .monitor .titulo3 h1, .padre .informacion .info_perifericos .descripcion .titulo3 h1, .padre .informacion .info_perifericos .mouse .titulo3 h1, .padre .informacion .info_perifericos .teclado .titulo3 h1, .padre .informacion .info_perifericos .mouse-pad .titulo3 h1, .padre .informacion .info_perifericos .auriculares .titulo3 h1, .padre .informacion .info_perifericos .monitor .titulo3 h1 {
+  margin: auto;
+  font-size: 5em;
+}
+
+.padre .informacion .info_montar .descripcion .titulo3 P, .padre .informacion .info_montar .mouse .titulo3 P, .padre .informacion .info_montar .teclado .titulo3 P, .padre .informacion .info_montar .mouse-pad .titulo3 P, .padre .informacion .info_montar .auriculares .titulo3 P, .padre .informacion .info_montar .monitor .titulo3 P, .padre .informacion .info_mantenimiento .descripcion .titulo3 P, .padre .informacion .info_mantenimiento .mouse .titulo3 P, .padre .informacion .info_mantenimiento .teclado .titulo3 P, .padre .informacion .info_mantenimiento .mouse-pad .titulo3 P, .padre .informacion .info_mantenimiento .auriculares .titulo3 P, .padre .informacion .info_mantenimiento .monitor .titulo3 P, .padre .informacion .info_perifericos .descripcion .titulo3 P, .padre .informacion .info_perifericos .mouse .titulo3 P, .padre .informacion .info_perifericos .teclado .titulo3 P, .padre .informacion .info_perifericos .mouse-pad .titulo3 P, .padre .informacion .info_perifericos .auriculares .titulo3 P, .padre .informacion .info_perifericos .monitor .titulo3 P {
+  margin: auto;
+  font-size: 2em;
+  text-align: justify;
+  width: 90%;
+}
+
+.padre .informacion .info_montar .descripcion .imagen, .padre .informacion .info_montar .mouse .imagen, .padre .informacion .info_montar .teclado .imagen, .padre .informacion .info_montar .mouse-pad .imagen, .padre .informacion .info_montar .auriculares .imagen, .padre .informacion .info_montar .monitor .imagen, .padre .informacion .info_mantenimiento .descripcion .imagen, .padre .informacion .info_mantenimiento .mouse .imagen, .padre .informacion .info_mantenimiento .teclado .imagen, .padre .informacion .info_mantenimiento .mouse-pad .imagen, .padre .informacion .info_mantenimiento .auriculares .imagen, .padre .informacion .info_mantenimiento .monitor .imagen, .padre .informacion .info_perifericos .descripcion .imagen, .padre .informacion .info_perifericos .mouse .imagen, .padre .informacion .info_perifericos .teclado .imagen, .padre .informacion .info_perifericos .mouse-pad .imagen, .padre .informacion .info_perifericos .auriculares .imagen, .padre .informacion .info_perifericos .monitor .imagen {
+  width: 20%;
+  margin: auto;
+}
+
+.padre .informacion .info_montar .descripcion img, .padre .informacion .info_montar .mouse img, .padre .informacion .info_montar .teclado img, .padre .informacion .info_montar .mouse-pad img, .padre .informacion .info_montar .auriculares img, .padre .informacion .info_montar .monitor img, .padre .informacion .info_mantenimiento .descripcion img, .padre .informacion .info_mantenimiento .mouse img, .padre .informacion .info_mantenimiento .teclado img, .padre .informacion .info_mantenimiento .mouse-pad img, .padre .informacion .info_mantenimiento .auriculares img, .padre .informacion .info_mantenimiento .monitor img, .padre .informacion .info_perifericos .descripcion img, .padre .informacion .info_perifericos .mouse img, .padre .informacion .info_perifericos .teclado img, .padre .informacion .info_perifericos .mouse-pad img, .padre .informacion .info_perifericos .auriculares img, .padre .informacion .info_perifericos .monitor img {
+  height: 25%;
+  margin: auto;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.padre .informacion .info_montar .descripcion img:hover, .padre .informacion .info_montar .mouse img:hover, .padre .informacion .info_montar .teclado img:hover, .padre .informacion .info_montar .mouse-pad img:hover, .padre .informacion .info_montar .auriculares img:hover, .padre .informacion .info_montar .monitor img:hover, .padre .informacion .info_mantenimiento .descripcion img:hover, .padre .informacion .info_mantenimiento .mouse img:hover, .padre .informacion .info_mantenimiento .teclado img:hover, .padre .informacion .info_mantenimiento .mouse-pad img:hover, .padre .informacion .info_mantenimiento .auriculares img:hover, .padre .informacion .info_mantenimiento .monitor img:hover, .padre .informacion .info_perifericos .descripcion img:hover, .padre .informacion .info_perifericos .mouse img:hover, .padre .informacion .info_perifericos .teclado img:hover, .padre .informacion .info_perifericos .mouse-pad img:hover, .padre .informacion .info_perifericos .auriculares img:hover, .padre .informacion .info_perifericos .monitor img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 footer {

@@ -84,7 +84,7 @@ footer{
         text-align: center;
         transition-duration: 1s;
         border-radius: 10%;
-        border: 0.2em solid black;
+        border: 0.15em solid rgba(0, 0, 0, 0.603);
     }
     .disipador:hover, .disco:hover, .tarjeta:hover, .chasis:hover, .procesador:hover, .ram:hover, .motherboard:hover, .fuente:hover, .ventilador:hover, .refrigeracion:hover{
         transform: scale(1.1);
@@ -99,7 +99,7 @@ footer{
         width: 95%;
         background: #2f97c1;
         border-radius: 2em;
-        border: 0.3em solid black;
+        border: 0.15em solid black;
     }
     .texto{
         width: 50%;

@@ -115,7 +115,7 @@ footer {
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   border-radius: 10%;
-  border: 0.2em solid black;
+  border: 0.15em solid rgba(0, 0, 0, 0.603);
 }
 
 .partes1 .disipador:hover, .partes1 .disco:hover, .partes1 .tarjeta:hover, .partes1 .chasis:hover, .partes1 .procesador:hover, .partes1 .ram:hover, .partes1 .motherboard:hover, .partes1 .fuente:hover, .partes1 .ventilador:hover, .partes1 .refrigeracion:hover, .partes2 .disipador:hover, .partes2 .disco:hover, .partes2 .tarjeta:hover, .partes2 .chasis:hover, .partes2 .procesador:hover, .partes2 .ram:hover, .partes2 .motherboard:hover, .partes2 .fuente:hover, .partes2 .ventilador:hover, .partes2 .refrigeracion:hover, .partes3 .disipador:hover, .partes3 .disco:hover, .partes3 .tarjeta:hover, .partes3 .chasis:hover, .partes3 .procesador:hover, .partes3 .ram:hover, .partes3 .motherboard:hover, .partes3 .fuente:hover, .partes3 .ventilador:hover, .partes3 .refrigeracion:hover {
@@ -138,7 +138,7 @@ footer {
   width: 95%;
   background: #2f97c1;
   border-radius: 2em;
-  border: 0.3em solid black;
+  border: 0.15em solid black;
 }
 
 .informacion_1 .texto, .informacion_2 .texto, .informacion_3 .texto {
