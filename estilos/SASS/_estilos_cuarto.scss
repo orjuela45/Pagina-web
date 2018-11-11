@@ -69,17 +69,9 @@ header{
         display: inline-flex;
         width: 90%;
         height: 15%;
-        .devolver, .siguiente{
+        h1{
             display: flex;
-            width: 10%;
-            transition-duration: 0.5s;
-        }
-        .devolver:hover, .siguiente:hover{
-            transform: scale(1.2)
-        }
-        .montar, .mantenimiento, .perifericos{
-            display: flex;
-            width: 80%;
+            width: 100%;
             justify-content: center;
             align-items: center;
             font-size: 7em;
@@ -92,7 +84,7 @@ header{
         margin-top: 2em;
         margin-bottom: 2em;
         background-color: rgba(0,0,0,.5);
-        border-radius: 5em;
+        border-radius: 1em;
         .info_montar, .info_mantenimiento, .info_perifericos{
             display: flex;
             width: 100%;
@@ -129,14 +121,17 @@ header{
                         width: 80%;
                     }
                 }
-            }  
-            .descripcion, .mouse, .teclado, .mouse-pad, .auriculares, .monitor{
+            }         
+        }
+        .info_perifericos{
+            display: flex;
+            flex-direction: column;
+            .descripcion{
                 width: 100%;
-                display: flex;
                 .titulo3{
                     display: flex;
                     flex-direction: column;
-                    width: 60%;
+                    width: 90%;
                     margin: auto;
                     margin-bottom: 2em;
                     h1{
@@ -145,25 +140,49 @@ header{
                     }
                     P{
                         margin: auto;
+                        margin-top: 2em;
                         font-size: 2em;
                         text-align: justify;
                         width: 90%;
                     }
                 }
-                .imagen{
-                    width: 20%;
-                    margin: auto;
-                }
-                img{
-                    height: 25%;
-                    margin: auto;
-                    transition-duration: 0.5s;
-                }
-                img:hover{
-                    transform: scale(1.2);
-                }
             }
-            
+            .cosas{
+                .mouse, .teclado, .mouse-pad, .auriculares, .monitor{
+                    width: 90%;
+                    margin: auto;
+                        display: flex;
+                        .titulo3{
+                            display: flex;
+                            flex-direction: column;
+                            width: 60%;
+                            margin: auto;
+                            margin-bottom: 2em;
+                            h1{
+                                margin: auto;
+                                font-size: 5em;
+                            }
+                            P{
+                                margin: auto;
+                                font-size: 2em;
+                                text-align: justify;
+                                width: 90%;
+                            }
+                        }
+                        .imagen{
+                            width: 40%;
+                            margin: auto;
+                        }
+                        img{
+                            height: 25%;
+                            margin: auto;
+                            transition-duration: 0.5s;
+                        }
+                        img:hover{
+                            transform: scale(1.2);
+                        }
+                }
+            }     
         }
     }
 }
