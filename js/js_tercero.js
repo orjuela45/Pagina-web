@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $(".formulario").fadeOut(0)
+    $(".formulario2").fadeOut(0)
     $('.registrarse').hover(function () {
             $(this).animate({   
                 width: "100%"
@@ -7,6 +8,7 @@ $(document).ready(function () {
             $('.registrarse h1').animate({
                 margin: "-0.03em auto",
             })
+            $(".formulario2").animate({heihgt: "toggle"},400)
         }, function () {    
             $(this).animate({
                 width: "50%"
@@ -14,6 +16,7 @@ $(document).ready(function () {
             $('.registrarse h1').animate({
                 margin: "1.5em auto",
             })
+            $(".formulario2").animate({heihgt: "toggle"},400)
         }
     );
     $('.iniciar').hover(function () {
@@ -23,7 +26,7 @@ $(document).ready(function () {
         $('.iniciar h1').animate({
             margin: "-0.03em auto",
         })
-        $(".formulario").animate({width: "toggle"},600)
+        $(".formulario").animate({width: "toggle"},400)
     }, function () {    
         $(this).animate({
             width: "50%"
@@ -31,7 +34,7 @@ $(document).ready(function () {
         $('.iniciar h1').animate({
             margin: "1.5em auto",
         })
-        $(".formulario").animate({width: "toggle"},600)
+        $(".formulario").animate({width: "toggle"},400)
     }
 );
 })

@@ -24,7 +24,7 @@
     <section class="panel">
         <div class="iniciar">
             <h1>INICIAR SESIÓN</h1>
-            <form action="php/formulario.php" method="POST" class="formulario">
+            <form action="" method="POST" class="formulario">
                 <p>Usuario</p>
                 <input type="text" class="user">
                 <p>Contraseña</p>
@@ -34,6 +34,29 @@
         </div>
         <div class="registrarse">
             <h1>REGISTRARSE</h1>
+            <form action="php/registrar.php" method="POST" class="formulario2">
+                <div class="campos">
+                    <div class="textos1">
+                        <p>Nombre completo</p>
+                        <p>Usuario</p>
+                        <p>Correo</p>
+                    </div>
+                    <div class="campos1">
+                        <input type="text" class="nombre">
+                        <input type="text" class="user">
+                        <input type="email" class="correo">
+                    </div>
+                    <div class="textos2">
+                        <p>Contraseña</p>
+                        <p>Repetir contraseña</p>
+                    </div>
+                    <div class="campos2">
+                        <input type="password" class="password">
+                        <input type="password" class="repetir">
+                    </div>
+                </div>
+                <input type="submit" class="enviar" value="REGISTRARSE">
+            </form>
         </div>
     </section>
     <section class="armar">
