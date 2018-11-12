@@ -69,7 +69,33 @@ header{
             font-size: 7em;
         }
         .formulario{
-            
+            display: flex;
+            margin: auto;
+            p{
+                font-size: 2.5em;
+            }
+            .user, .password, .enviar{
+                width: 13em;
+                height: 2em;
+                align-self: center;
+                margin-left: 1em;
+                margin-right: 1em;
+                border: 0.1em solid white;
+                font-family: 'Teko', sans-serif;
+                font-size: 1.6em;
+            }
+            .enviar{
+                background-color: rgba(102, 51, 153, 0);
+                color: white;
+                width: 8em;
+                height: 2.5em;
+                font-family: 'Teko', sans-serif;
+                font-size: 1.5em;
+                transition-duration: 0.5s;
+            }
+            .enviar:hover{
+                transform: scale(1.1)
+            }
         }
     }
     .iniciar:hover{

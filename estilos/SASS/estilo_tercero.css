@@ -102,6 +102,46 @@ header .menu ul li a:hover {
   font-size: 7em;
 }
 
+.panel .iniciar .formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.panel .iniciar .formulario p {
+  font-size: 2.5em;
+}
+
+.panel .iniciar .formulario .user, .panel .iniciar .formulario .password, .panel .iniciar .formulario .enviar {
+  width: 13em;
+  height: 2em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  border: 0.1em solid white;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.6em;
+}
+
+.panel .iniciar .formulario .enviar {
+  background-color: rgba(102, 51, 153, 0);
+  color: white;
+  width: 8em;
+  height: 2.5em;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.5em;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.panel .iniciar .formulario .enviar:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .panel .iniciar:hover {
   width: 100%;
 }
