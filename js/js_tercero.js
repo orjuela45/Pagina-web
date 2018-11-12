@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $(".hola").fadeOut(0)
+    $(".iniciar").mouseenter(function(){
+        $(".hola").fadeIn(1000)
+    })
+    $(".iniciar").mouseleave(function(){
+        $(".hola").fadeOut(1000)
+    })
+})
