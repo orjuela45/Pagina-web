@@ -91,8 +91,6 @@ header .menu ul li a:hover {
           flex-direction: column;
   width: 50%;
   background: #de1a1a;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
   border-radius: 10px;
   border: 1px solid black;
 }
@@ -102,27 +100,17 @@ header .menu ul li a:hover {
   font-size: 7em;
 }
 
-.panel .iniciar:hover {
-  width: 100%;
-}
-
 .panel .registrarse {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
 }
 
 .panel .registrarse h1 {
   margin: auto;
   font-size: 7em;
   color: #de1a1a;
-}
-
-.panel .registrarse:hover {
-  width: 100%;
 }
 
 .armar {
