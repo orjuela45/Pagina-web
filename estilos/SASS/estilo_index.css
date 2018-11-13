@@ -305,7 +305,7 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     margin: 0.2em;
-    font-size: 0.5em;
+    font-size: 0.4em;
   }
   .informacion .general1, .informacion .general2, .informacion .general3, .informacion .general4 {
     display: -webkit-box;

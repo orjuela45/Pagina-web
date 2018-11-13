@@ -321,7 +321,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0.4em;
+    margin: 0.5em;
   }
   .padre .informacion .info_montar .titulo2, .padre .informacion .info_mantenimiento .titulo2 {
     width: 90%;
@@ -386,7 +386,7 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     margin: 0.2em;
-    font-size: 0.5em;
+    font-size: 0.4em;
   }
   .padre .titulo {
     font-size: 0.7em;
