@@ -325,4 +325,69 @@ footer {
     margin: 0.4em;
   }
 }
+
+@media screen and (max-width: 800px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    background-size: cover;
+    background-position-y: 0em;
+    background-position-x: -11em;
+  }
+  header .titulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 45.2%;
+    font-size: 1.5em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 0em 1em;
+    margin-left: 4em;
+    margin-top: 8em;
+  }
+  header .menu {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    height: 31%;
+  }
+  header .menu ul {
+    width: 100%;
+    height: 1.4em;
+  }
+  header .menu ul li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0.2em;
+    font-size: 0.5em;
+  }
+  .panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .panel .iniciar, .panel .registrarse {
+    width: 100%;
+  }
+  .panel .iniciar h1, .panel .registrarse h1 {
+    font-size: 4em;
+  }
+}
 /*# sourceMappingURL=estilo_tercero.css.map */

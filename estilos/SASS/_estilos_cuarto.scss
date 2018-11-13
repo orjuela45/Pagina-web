@@ -102,7 +102,6 @@ header{
                 }
                 .cosas{
                     width: 100%;
-                    height: 100%;
                     text-align: center;
                     iframe{
                         width: 500;
@@ -173,7 +172,6 @@ header{
                             margin: auto;
                         }
                         img{
-                            height: 25%;
                             margin: auto;
                             transition-duration: 0.5s;
                         }
@@ -218,6 +216,121 @@ footer{
                 display: inline-flex;
                 align-items: center;
                 margin: 0.4em;
+            }
+        }
+    }
+    .padre{
+        .informacion{
+            .info_montar, .info_mantenimiento{
+                .titulo2{
+                    width: 90%;
+                    margin-left: 2em;
+                }
+                .videos,.programas{
+                    margin-left: 0%;
+                    width: 100%;
+                    .cosas{
+                        iframe{
+                            width: 90%;
+                            height: 31%;
+                        }
+                    }
+                }
+            }
+            .info_perifericos{
+                .cosas{
+                    .mouse,.auriculares, .mouse-pad, .teclado, .monitor{
+                        .imagen{
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px){
+    header{
+        flex-direction: column-reverse;
+        background-size: cover;
+        background-position-y: 0em;
+        background-position-x: -5em;
+        .titulo{
+            display: flex;
+            width: 45.2%;
+            font-size: 2.5em;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0em 1em;
+            margin-left: 2em;
+            margin-top: 5em;
+        }
+        .menu{
+            display: inline-flex;
+            width: 100%;
+            height: 31%;
+            ul{
+                width: 100%;
+                height: 1.4em;
+            }
+            ul li{
+                display: inline-flex;
+                align-items: center;
+                margin: 0.2em;
+                font-size: 0.5em;
+            }
+        }
+    }
+    .padre{
+        .titulo{
+            font-size: 0.7em;
+        }
+        .informacion{
+            .info_montar, .info_mantenimiento{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .videos, .programas{
+                    margin: auto;
+                    width: 95%;
+                    .cosas{
+                        width: 100%;
+                        margin: auto;
+                        iframe{
+                            width: 90%;
+                            height: 20%;
+                        }
+                    }
+                }
+            }
+            .info_perifericos{
+                .cosas{
+                    .mouse,.mouse-pad, .teclado, .monitor, .auriculares{
+                        display: flex;
+                        flex-direction: column;
+                        width: 90%;
+                        .titulo3{
+                            width: 90%;
+                            p{
+                                width: 100%;
+                            }
+                        }
+                        .imagen{
+                            width: 100%;
+                            img{
+                                width: 100%;
+                                height: 50%;
+                            }
+                        }
+                    }
+                    .teclado, .auriculares{
+                        display: flex;
+                        flex-direction: column-reverse;
+                    }
+                }
             }
         }
     }

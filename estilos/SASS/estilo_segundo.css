@@ -134,7 +134,9 @@ footer {
 
 .informacion_1 .informacion1, .informacion_1 .informacion2, .informacion_1 .informacion3, .informacion_1 .informacion4, .informacion_1 .informacion5, .informacion_1 .informacion6, .informacion_1 .informacion7, .informacion_1 .informacion8, .informacion_1 .informacion9, .informacion_1 .informacion10, .informacion_2 .informacion1, .informacion_2 .informacion2, .informacion_2 .informacion3, .informacion_2 .informacion4, .informacion_2 .informacion5, .informacion_2 .informacion6, .informacion_2 .informacion7, .informacion_2 .informacion8, .informacion_2 .informacion9, .informacion_2 .informacion10, .informacion_3 .informacion1, .informacion_3 .informacion2, .informacion_3 .informacion3, .informacion_3 .informacion4, .informacion_3 .informacion5, .informacion_3 .informacion6, .informacion_3 .informacion7, .informacion_3 .informacion8, .informacion_3 .informacion9, .informacion_3 .informacion10 {
   margin-top: 1em;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 95%;
   background: #2f97c1;
   border-radius: 2em;
@@ -201,6 +203,7 @@ footer {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    background-position-y: 0em;
   }
   header .titulo {
     display: -webkit-box;
@@ -216,15 +219,15 @@ footer {
             align-items: center;
     text-align: center;
     padding: 0em 1em;
-    margin-left: 10em;
-    margin-top: 8em;
+    margin-left: 9em;
+    margin-top: 11em;
   }
   header .menu {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     width: 100%;
-    height: 31%;
+    height: 30%;
   }
   header .menu ul {
     width: 100%;
@@ -254,7 +257,9 @@ footer {
   }
   .informacion_1 .informacion1, .informacion_1 .informacion2, .informacion_1 .informacion3, .informacion_1 .informacion4, .informacion_1 .informacion5, .informacion_1 .informacion6, .informacion_1 .informacion7, .informacion_1 .informacion8, .informacion_1 .informacion9, .informacion_1 .informacion10, .informacion_2 .informacion1, .informacion_2 .informacion2, .informacion_2 .informacion3, .informacion_2 .informacion4, .informacion_2 .informacion5, .informacion_2 .informacion6, .informacion_2 .informacion7, .informacion_2 .informacion8, .informacion_2 .informacion9, .informacion_2 .informacion10, .informacion_3 .informacion1, .informacion_3 .informacion2, .informacion_3 .informacion3, .informacion_3 .informacion4, .informacion_3 .informacion5, .informacion_3 .informacion6, .informacion_3 .informacion7, .informacion_3 .informacion8, .informacion_3 .informacion9, .informacion_3 .informacion10 {
     margin-top: 1em;
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 95%;
     background: #2f97c1;
     border-radius: 2em;
@@ -262,7 +267,6 @@ footer {
   }
   .informacion_1 .texto, .informacion_2 .texto, .informacion_3 .texto {
     width: 50%;
-    margin: auto;
   }
   .informacion_1 .texto p, .informacion_2 .texto p, .informacion_3 .texto p {
     margin: 2em;
@@ -312,6 +316,113 @@ footer {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    background-size: cover;
+    background-position-y: -0.1em;
+    background-position-x: -5em;
+  }
+  header .titulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 35.2%;
+    font-size: 1.5em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 0em 1em;
+    margin-left: 4.5em;
+    margin-top: 8em;
+  }
+  header .menu {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    height: 31%;
+  }
+  header .menu ul {
+    width: 100%;
+    height: 1.4em;
+  }
+  header .menu ul li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0.2em;
+    font-size: 0.5em;
+  }
+  .partes1, .partes2, .partes3 {
+    width: 90%;
+    margin: auto;
+    margin-left: 1.3em;
+    margin-top: .5em;
+  }
+  .partes1 h1, .partes2 h1, .partes3 h1 {
+    font-size: 1em;
+  }
+  .informacion_1, .informacion_2, .informacion_3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    margin: auto;
+  }
+  .informacion_1 .informacion1, .informacion_1 .informacion2, .informacion_1 .informacion3, .informacion_1 .informacion4, .informacion_1 .informacion5, .informacion_1 .informacion6, .informacion_1 .informacion7, .informacion_1 .informacion8, .informacion_1 .informacion9, .informacion_1 .informacion10, .informacion_2 .informacion1, .informacion_2 .informacion2, .informacion_2 .informacion3, .informacion_2 .informacion4, .informacion_2 .informacion5, .informacion_2 .informacion6, .informacion_2 .informacion7, .informacion_2 .informacion8, .informacion_2 .informacion9, .informacion_2 .informacion10, .informacion_3 .informacion1, .informacion_3 .informacion2, .informacion_3 .informacion3, .informacion_3 .informacion4, .informacion_3 .informacion5, .informacion_3 .informacion6, .informacion_3 .informacion7, .informacion_3 .informacion8, .informacion_3 .informacion9, .informacion_3 .informacion10 {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .informacion_1 .informacion1 .texto, .informacion_1 .informacion2 .texto, .informacion_1 .informacion3 .texto, .informacion_1 .informacion4 .texto, .informacion_1 .informacion5 .texto, .informacion_1 .informacion6 .texto, .informacion_1 .informacion7 .texto, .informacion_1 .informacion8 .texto, .informacion_1 .informacion9 .texto, .informacion_1 .informacion10 .texto, .informacion_2 .informacion1 .texto, .informacion_2 .informacion2 .texto, .informacion_2 .informacion3 .texto, .informacion_2 .informacion4 .texto, .informacion_2 .informacion5 .texto, .informacion_2 .informacion6 .texto, .informacion_2 .informacion7 .texto, .informacion_2 .informacion8 .texto, .informacion_2 .informacion9 .texto, .informacion_2 .informacion10 .texto, .informacion_3 .informacion1 .texto, .informacion_3 .informacion2 .texto, .informacion_3 .informacion3 .texto, .informacion_3 .informacion4 .texto, .informacion_3 .informacion5 .texto, .informacion_3 .informacion6 .texto, .informacion_3 .informacion7 .texto, .informacion_3 .informacion8 .texto, .informacion_3 .informacion9 .texto, .informacion_3 .informacion10 .texto {
+    width: 100%;
+  }
+  .informacion_1 .informacion1 h1, .informacion_1 .informacion2 h1, .informacion_1 .informacion3 h1, .informacion_1 .informacion4 h1, .informacion_1 .informacion5 h1, .informacion_1 .informacion6 h1, .informacion_1 .informacion7 h1, .informacion_1 .informacion8 h1, .informacion_1 .informacion9 h1, .informacion_1 .informacion10 h1, .informacion_2 .informacion1 h1, .informacion_2 .informacion2 h1, .informacion_2 .informacion3 h1, .informacion_2 .informacion4 h1, .informacion_2 .informacion5 h1, .informacion_2 .informacion6 h1, .informacion_2 .informacion7 h1, .informacion_2 .informacion8 h1, .informacion_2 .informacion9 h1, .informacion_2 .informacion10 h1, .informacion_3 .informacion1 h1, .informacion_3 .informacion2 h1, .informacion_3 .informacion3 h1, .informacion_3 .informacion4 h1, .informacion_3 .informacion5 h1, .informacion_3 .informacion6 h1, .informacion_3 .informacion7 h1, .informacion_3 .informacion8 h1, .informacion_3 .informacion9 h1, .informacion_3 .informacion10 h1 {
+    font-size: 2em;
+  }
+  .informacion_1 .informacion1 p, .informacion_1 .informacion2 p, .informacion_1 .informacion3 p, .informacion_1 .informacion4 p, .informacion_1 .informacion5 p, .informacion_1 .informacion6 p, .informacion_1 .informacion7 p, .informacion_1 .informacion8 p, .informacion_1 .informacion9 p, .informacion_1 .informacion10 p, .informacion_2 .informacion1 p, .informacion_2 .informacion2 p, .informacion_2 .informacion3 p, .informacion_2 .informacion4 p, .informacion_2 .informacion5 p, .informacion_2 .informacion6 p, .informacion_2 .informacion7 p, .informacion_2 .informacion8 p, .informacion_2 .informacion9 p, .informacion_2 .informacion10 p, .informacion_3 .informacion1 p, .informacion_3 .informacion2 p, .informacion_3 .informacion3 p, .informacion_3 .informacion4 p, .informacion_3 .informacion5 p, .informacion_3 .informacion6 p, .informacion_3 .informacion7 p, .informacion_3 .informacion8 p, .informacion_3 .informacion9 p, .informacion_3 .informacion10 p {
+    font-size: 1.4em;
+  }
+  .informacion_1 .informacion1 .marcas, .informacion_1 .informacion2 .marcas, .informacion_1 .informacion3 .marcas, .informacion_1 .informacion4 .marcas, .informacion_1 .informacion5 .marcas, .informacion_1 .informacion6 .marcas, .informacion_1 .informacion7 .marcas, .informacion_1 .informacion8 .marcas, .informacion_1 .informacion9 .marcas, .informacion_1 .informacion10 .marcas, .informacion_2 .informacion1 .marcas, .informacion_2 .informacion2 .marcas, .informacion_2 .informacion3 .marcas, .informacion_2 .informacion4 .marcas, .informacion_2 .informacion5 .marcas, .informacion_2 .informacion6 .marcas, .informacion_2 .informacion7 .marcas, .informacion_2 .informacion8 .marcas, .informacion_2 .informacion9 .marcas, .informacion_2 .informacion10 .marcas, .informacion_3 .informacion1 .marcas, .informacion_3 .informacion2 .marcas, .informacion_3 .informacion3 .marcas, .informacion_3 .informacion4 .marcas, .informacion_3 .informacion5 .marcas, .informacion_3 .informacion6 .marcas, .informacion_3 .informacion7 .marcas, .informacion_3 .informacion8 .marcas, .informacion_3 .informacion9 .marcas, .informacion_3 .informacion10 .marcas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .informacion_1 .informacion1 .marcas .imagenes, .informacion_1 .informacion2 .marcas .imagenes, .informacion_1 .informacion3 .marcas .imagenes, .informacion_1 .informacion4 .marcas .imagenes, .informacion_1 .informacion5 .marcas .imagenes, .informacion_1 .informacion6 .marcas .imagenes, .informacion_1 .informacion7 .marcas .imagenes, .informacion_1 .informacion8 .marcas .imagenes, .informacion_1 .informacion9 .marcas .imagenes, .informacion_1 .informacion10 .marcas .imagenes, .informacion_2 .informacion1 .marcas .imagenes, .informacion_2 .informacion2 .marcas .imagenes, .informacion_2 .informacion3 .marcas .imagenes, .informacion_2 .informacion4 .marcas .imagenes, .informacion_2 .informacion5 .marcas .imagenes, .informacion_2 .informacion6 .marcas .imagenes, .informacion_2 .informacion7 .marcas .imagenes, .informacion_2 .informacion8 .marcas .imagenes, .informacion_2 .informacion9 .marcas .imagenes, .informacion_2 .informacion10 .marcas .imagenes, .informacion_3 .informacion1 .marcas .imagenes, .informacion_3 .informacion2 .marcas .imagenes, .informacion_3 .informacion3 .marcas .imagenes, .informacion_3 .informacion4 .marcas .imagenes, .informacion_3 .informacion5 .marcas .imagenes, .informacion_3 .informacion6 .marcas .imagenes, .informacion_3 .informacion7 .marcas .imagenes, .informacion_3 .informacion8 .marcas .imagenes, .informacion_3 .informacion9 .marcas .imagenes, .informacion_3 .informacion10 .marcas .imagenes {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+  }
+  .informacion_1 .informacion1 .marcas .imagenes img, .informacion_1 .informacion2 .marcas .imagenes img, .informacion_1 .informacion3 .marcas .imagenes img, .informacion_1 .informacion4 .marcas .imagenes img, .informacion_1 .informacion5 .marcas .imagenes img, .informacion_1 .informacion6 .marcas .imagenes img, .informacion_1 .informacion7 .marcas .imagenes img, .informacion_1 .informacion8 .marcas .imagenes img, .informacion_1 .informacion9 .marcas .imagenes img, .informacion_1 .informacion10 .marcas .imagenes img, .informacion_2 .informacion1 .marcas .imagenes img, .informacion_2 .informacion2 .marcas .imagenes img, .informacion_2 .informacion3 .marcas .imagenes img, .informacion_2 .informacion4 .marcas .imagenes img, .informacion_2 .informacion5 .marcas .imagenes img, .informacion_2 .informacion6 .marcas .imagenes img, .informacion_2 .informacion7 .marcas .imagenes img, .informacion_2 .informacion8 .marcas .imagenes img, .informacion_2 .informacion9 .marcas .imagenes img, .informacion_2 .informacion10 .marcas .imagenes img, .informacion_3 .informacion1 .marcas .imagenes img, .informacion_3 .informacion2 .marcas .imagenes img, .informacion_3 .informacion3 .marcas .imagenes img, .informacion_3 .informacion4 .marcas .imagenes img, .informacion_3 .informacion5 .marcas .imagenes img, .informacion_3 .informacion6 .marcas .imagenes img, .informacion_3 .informacion7 .marcas .imagenes img, .informacion_3 .informacion8 .marcas .imagenes img, .informacion_3 .informacion9 .marcas .imagenes img, .informacion_3 .informacion10 .marcas .imagenes img {
+    width: 30%;
+    height: 20%;
   }
 }
 /*# sourceMappingURL=estilo_segundo.css.map */

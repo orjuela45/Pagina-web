@@ -58,7 +58,6 @@ header{
     .general1{ 
         display: flex;
         width: 50%;
-        height: 38%;
         border-radius: 5em;
         border: 0.18em solid rgba(0, 0, 0, 0.445);
         background: #9000B3;
@@ -68,7 +67,6 @@ header{
         .imagen1{
             display: flex;
             width: 50%;
-            height: 100%;
             justify-content: center;
             margin: 0;
         }
@@ -83,7 +81,6 @@ header{
     .general2{ 
         display: flex;
         width: 50%;
-        height: 38%;
         border-radius: 5em;
         border: 0.18em solid black;
         background: #9000B3;
@@ -93,7 +90,6 @@ header{
         .imagen2{
             display: flex;
             width: 53%;
-            height: 100%;
             justify-content: center;
         }
         .texto2{
@@ -106,7 +102,6 @@ header{
     .general3{ 
         display: flex;
         width: 50%;
-        height: 38%;
         border-radius: 5em;
         border: 0.18em solid black;
         background: #9000B3;
@@ -116,7 +111,6 @@ header{
         .imagen3{
             display: flex;
             width: 50%;
-            height: 100%;
             justify-content: center;
         }
         .texto3{
@@ -129,7 +123,6 @@ header{
     .general4{ 
         display: flex;
         width: 50%;
-        height: 38%;
         border-radius: 5em;
         border: 0.18em solid black;
         background: #9000B3;
@@ -139,7 +132,6 @@ header{
         .imagen4{
             display: flex;
             width: 53%;
-            height: 100%;
             justify-content: center;
         }
         .texto4{
@@ -196,6 +188,65 @@ footer{
         }
         .general2, .general3, .general4{
             font-size: 0.84em;
+        }
+    }
+}
+@media screen and (max-width: 800px){
+    header{
+        flex-direction: column-reverse;
+        background-position-x: -12em;
+        .titulo{
+            display: flex;
+            width: 34.2%;
+            font-size: 1.5em;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0em 1em;
+            margin-left: 4.5em;
+            margin-top: 8em;
+        }
+        .menu{
+            display: inline-flex;
+            width: 100%;
+            height: 31%;
+            ul{
+                width: 100%;
+                height: 1.4em;
+            }
+            ul li{
+                display: inline-flex;
+                align-items: center;
+                margin: 0.2em;
+                font-size: 0.5em;
+            }
+        }
+    }
+    .informacion{
+        .general1, .general2, .general3, .general4  {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            width: 80%;
+            .imagen1, .imagen2 ,.imagen3, .imagen4{
+                margin-top: -3em;
+                display: flex;
+                width: 90%;
+                img{
+                    width: 100%;
+                    height: 30%;
+                }
+            }        
+            .texto1, .texto2, .texto3 ,.texto4{
+                width: 80%;
+                p{
+                    font-size: 1em;
+                }
+            }
+        }
+        .general2, .general4{
+            display: flex;
+            flex-direction: column;
         }
     }
 }

@@ -159,7 +159,6 @@ header .menu ul li a:hover {
 
 .padre .informacion .info_montar .videos .cosas, .padre .informacion .info_montar .programas .cosas, .padre .informacion .info_mantenimiento .videos .cosas, .padre .informacion .info_mantenimiento .programas .cosas, .padre .informacion .info_perifericos .videos .cosas, .padre .informacion .info_perifericos .programas .cosas {
   width: 100%;
-  height: 100%;
   text-align: center;
 }
 
@@ -262,7 +261,6 @@ header .menu ul li a:hover {
 }
 
 .padre .informacion .info_perifericos .cosas .mouse img, .padre .informacion .info_perifericos .cosas .teclado img, .padre .informacion .info_perifericos .cosas .mouse-pad img, .padre .informacion .info_perifericos .cosas .auriculares img, .padre .informacion .info_perifericos .cosas .monitor img {
-  height: 25%;
   margin: auto;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
@@ -324,6 +322,130 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     margin: 0.4em;
+  }
+  .padre .informacion .info_montar .titulo2, .padre .informacion .info_mantenimiento .titulo2 {
+    width: 90%;
+    margin-left: 2em;
+  }
+  .padre .informacion .info_montar .videos, .padre .informacion .info_montar .programas, .padre .informacion .info_mantenimiento .videos, .padre .informacion .info_mantenimiento .programas {
+    margin-left: 0%;
+    width: 100%;
+  }
+  .padre .informacion .info_montar .videos .cosas iframe, .padre .informacion .info_montar .programas .cosas iframe, .padre .informacion .info_mantenimiento .videos .cosas iframe, .padre .informacion .info_mantenimiento .programas .cosas iframe {
+    width: 90%;
+    height: 31%;
+  }
+  .padre .informacion .info_perifericos .cosas .mouse .imagen img, .padre .informacion .info_perifericos .cosas .auriculares .imagen img, .padre .informacion .info_perifericos .cosas .mouse-pad .imagen img, .padre .informacion .info_perifericos .cosas .teclado .imagen img, .padre .informacion .info_perifericos .cosas .monitor .imagen img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    background-size: cover;
+    background-position-y: 0em;
+    background-position-x: -5em;
+  }
+  header .titulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 45.2%;
+    font-size: 2.5em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 0em 1em;
+    margin-left: 2em;
+    margin-top: 5em;
+  }
+  header .menu {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    height: 31%;
+  }
+  header .menu ul {
+    width: 100%;
+    height: 1.4em;
+  }
+  header .menu ul li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0.2em;
+    font-size: 0.5em;
+  }
+  .padre .titulo {
+    font-size: 0.7em;
+  }
+  .padre .informacion .info_montar, .padre .informacion .info_mantenimiento {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .padre .informacion .info_montar .videos, .padre .informacion .info_montar .programas, .padre .informacion .info_mantenimiento .videos, .padre .informacion .info_mantenimiento .programas {
+    margin: auto;
+    width: 95%;
+  }
+  .padre .informacion .info_montar .videos .cosas, .padre .informacion .info_montar .programas .cosas, .padre .informacion .info_mantenimiento .videos .cosas, .padre .informacion .info_mantenimiento .programas .cosas {
+    width: 100%;
+    margin: auto;
+  }
+  .padre .informacion .info_montar .videos .cosas iframe, .padre .informacion .info_montar .programas .cosas iframe, .padre .informacion .info_mantenimiento .videos .cosas iframe, .padre .informacion .info_mantenimiento .programas .cosas iframe {
+    width: 90%;
+    height: 20%;
+  }
+  .padre .informacion .info_perifericos .cosas .mouse, .padre .informacion .info_perifericos .cosas .mouse-pad, .padre .informacion .info_perifericos .cosas .teclado, .padre .informacion .info_perifericos .cosas .monitor, .padre .informacion .info_perifericos .cosas .auriculares {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+  }
+  .padre .informacion .info_perifericos .cosas .mouse .titulo3, .padre .informacion .info_perifericos .cosas .mouse-pad .titulo3, .padre .informacion .info_perifericos .cosas .teclado .titulo3, .padre .informacion .info_perifericos .cosas .monitor .titulo3, .padre .informacion .info_perifericos .cosas .auriculares .titulo3 {
+    width: 90%;
+  }
+  .padre .informacion .info_perifericos .cosas .mouse .titulo3 p, .padre .informacion .info_perifericos .cosas .mouse-pad .titulo3 p, .padre .informacion .info_perifericos .cosas .teclado .titulo3 p, .padre .informacion .info_perifericos .cosas .monitor .titulo3 p, .padre .informacion .info_perifericos .cosas .auriculares .titulo3 p {
+    width: 100%;
+  }
+  .padre .informacion .info_perifericos .cosas .mouse .imagen, .padre .informacion .info_perifericos .cosas .mouse-pad .imagen, .padre .informacion .info_perifericos .cosas .teclado .imagen, .padre .informacion .info_perifericos .cosas .monitor .imagen, .padre .informacion .info_perifericos .cosas .auriculares .imagen {
+    width: 100%;
+  }
+  .padre .informacion .info_perifericos .cosas .mouse .imagen img, .padre .informacion .info_perifericos .cosas .mouse-pad .imagen img, .padre .informacion .info_perifericos .cosas .teclado .imagen img, .padre .informacion .info_perifericos .cosas .monitor .imagen img, .padre .informacion .info_perifericos .cosas .auriculares .imagen img {
+    width: 100%;
+    height: 50%;
+  }
+  .padre .informacion .info_perifericos .cosas .teclado, .padre .informacion .info_perifericos .cosas .auriculares {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 /*# sourceMappingURL=estilo_cuarto.css.map */

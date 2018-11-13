@@ -81,7 +81,6 @@ header .menu ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  height: 38%;
   border-radius: 5em;
   border: 0.18em solid rgba(0, 0, 0, 0.445);
   background: #9000B3;
@@ -94,7 +93,6 @@ header .menu ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -116,7 +114,6 @@ header .menu ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  height: 38%;
   border-radius: 5em;
   border: 0.18em solid black;
   background: #9000B3;
@@ -129,7 +126,6 @@ header .menu ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   width: 53%;
-  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -147,7 +143,6 @@ header .menu ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  height: 38%;
   border-radius: 5em;
   border: 0.18em solid black;
   background: #9000B3;
@@ -160,7 +155,6 @@ header .menu ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -178,7 +172,6 @@ header .menu ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  height: 38%;
   border-radius: 5em;
   border: 0.18em solid black;
   background: #9000B3;
@@ -191,7 +184,6 @@ header .menu ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   width: 53%;
-  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -266,6 +258,93 @@ footer {
   }
   .informacion .general2, .informacion .general3, .informacion .general4 {
     font-size: 0.84em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    background-position-x: -12em;
+  }
+  header .titulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 34.2%;
+    font-size: 1.5em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 0em 1em;
+    margin-left: 4.5em;
+    margin-top: 8em;
+  }
+  header .menu {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    height: 31%;
+  }
+  header .menu ul {
+    width: 100%;
+    height: 1.4em;
+  }
+  header .menu ul li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0.2em;
+    font-size: 0.5em;
+  }
+  .informacion .general1, .informacion .general2, .informacion .general3, .informacion .general4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+  }
+  .informacion .general1 .imagen1, .informacion .general1 .imagen2, .informacion .general1 .imagen3, .informacion .general1 .imagen4, .informacion .general2 .imagen1, .informacion .general2 .imagen2, .informacion .general2 .imagen3, .informacion .general2 .imagen4, .informacion .general3 .imagen1, .informacion .general3 .imagen2, .informacion .general3 .imagen3, .informacion .general3 .imagen4, .informacion .general4 .imagen1, .informacion .general4 .imagen2, .informacion .general4 .imagen3, .informacion .general4 .imagen4 {
+    margin-top: -3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+  }
+  .informacion .general1 .imagen1 img, .informacion .general1 .imagen2 img, .informacion .general1 .imagen3 img, .informacion .general1 .imagen4 img, .informacion .general2 .imagen1 img, .informacion .general2 .imagen2 img, .informacion .general2 .imagen3 img, .informacion .general2 .imagen4 img, .informacion .general3 .imagen1 img, .informacion .general3 .imagen2 img, .informacion .general3 .imagen3 img, .informacion .general3 .imagen4 img, .informacion .general4 .imagen1 img, .informacion .general4 .imagen2 img, .informacion .general4 .imagen3 img, .informacion .general4 .imagen4 img {
+    width: 100%;
+    height: 30%;
+  }
+  .informacion .general1 .texto1, .informacion .general1 .texto2, .informacion .general1 .texto3, .informacion .general1 .texto4, .informacion .general2 .texto1, .informacion .general2 .texto2, .informacion .general2 .texto3, .informacion .general2 .texto4, .informacion .general3 .texto1, .informacion .general3 .texto2, .informacion .general3 .texto3, .informacion .general3 .texto4, .informacion .general4 .texto1, .informacion .general4 .texto2, .informacion .general4 .texto3, .informacion .general4 .texto4 {
+    width: 80%;
+  }
+  .informacion .general1 .texto1 p, .informacion .general1 .texto2 p, .informacion .general1 .texto3 p, .informacion .general1 .texto4 p, .informacion .general2 .texto1 p, .informacion .general2 .texto2 p, .informacion .general2 .texto3 p, .informacion .general2 .texto4 p, .informacion .general3 .texto1 p, .informacion .general3 .texto2 p, .informacion .general3 .texto3 p, .informacion .general3 .texto4 p, .informacion .general4 .texto1 p, .informacion .general4 .texto2 p, .informacion .general4 .texto3 p, .informacion .general4 .texto4 p {
+    font-size: 1em;
+  }
+  .informacion .general2, .informacion .general4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=estilo_index.css.map */
