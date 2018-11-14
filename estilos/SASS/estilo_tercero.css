@@ -29,7 +29,7 @@ header .titulo {
   padding: 0em 1em;
 }
 
-header .menu {
+header .menu, header .menu2 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -42,18 +42,18 @@ header .menu {
   text-align: center;
 }
 
-header .menu ul {
+header .menu ul, header .menu2 ul {
   margin: 0em;
   padding: 0em;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-header .menu ul li {
+header .menu ul li, header .menu2 ul li {
   height: 25%;
   display: block;
 }
 
-header .menu ul li a {
+header .menu ul li a, header .menu2 ul li a {
   height: 35%;
   color: white;
   display: -webkit-box;
@@ -68,8 +68,25 @@ header .menu ul li a {
           transition-duration: 0.5s;
 }
 
-header .menu ul li a:hover {
+header .menu ul li a:hover, header .menu2 ul li a:hover {
   background-color: #de1a1a;
+}
+
+header .menu2 {
+  width: 100%;
+}
+
+header .usur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+header .usur .cerrar {
+  margin: 2em;
+  width: 25%;
+  height: 2%;
 }
 
 .panel {
@@ -381,6 +398,37 @@ footer {
   .panel .iniciar .formulario2 .campos_1 .textos1 .nombre, .panel .iniciar .formulario2 .campos_1 .textos1 .user, .panel .iniciar .formulario2 .campos_1 .textos1 .correo, .panel .iniciar .formulario2 .campos_1 .textos1 .password, .panel .iniciar .formulario2 .campos_1 .textos1 .repetir, .panel .iniciar .formulario2 .campos_1 .textos2 .nombre, .panel .iniciar .formulario2 .campos_1 .textos2 .user, .panel .iniciar .formulario2 .campos_1 .textos2 .correo, .panel .iniciar .formulario2 .campos_1 .textos2 .password, .panel .iniciar .formulario2 .campos_1 .textos2 .repetir, .panel .iniciar .formulario2 .campos_2 .textos1 .nombre, .panel .iniciar .formulario2 .campos_2 .textos1 .user, .panel .iniciar .formulario2 .campos_2 .textos1 .correo, .panel .iniciar .formulario2 .campos_2 .textos1 .password, .panel .iniciar .formulario2 .campos_2 .textos1 .repetir, .panel .iniciar .formulario2 .campos_2 .textos2 .nombre, .panel .iniciar .formulario2 .campos_2 .textos2 .user, .panel .iniciar .formulario2 .campos_2 .textos2 .correo, .panel .iniciar .formulario2 .campos_2 .textos2 .password, .panel .iniciar .formulario2 .campos_2 .textos2 .repetir, .panel .registrarse .formulario2 .campos_1 .textos1 .nombre, .panel .registrarse .formulario2 .campos_1 .textos1 .user, .panel .registrarse .formulario2 .campos_1 .textos1 .correo, .panel .registrarse .formulario2 .campos_1 .textos1 .password, .panel .registrarse .formulario2 .campos_1 .textos1 .repetir, .panel .registrarse .formulario2 .campos_1 .textos2 .nombre, .panel .registrarse .formulario2 .campos_1 .textos2 .user, .panel .registrarse .formulario2 .campos_1 .textos2 .correo, .panel .registrarse .formulario2 .campos_1 .textos2 .password, .panel .registrarse .formulario2 .campos_1 .textos2 .repetir, .panel .registrarse .formulario2 .campos_2 .textos1 .nombre, .panel .registrarse .formulario2 .campos_2 .textos1 .user, .panel .registrarse .formulario2 .campos_2 .textos1 .correo, .panel .registrarse .formulario2 .campos_2 .textos1 .password, .panel .registrarse .formulario2 .campos_2 .textos1 .repetir, .panel .registrarse .formulario2 .campos_2 .textos2 .nombre, .panel .registrarse .formulario2 .campos_2 .textos2 .user, .panel .registrarse .formulario2 .campos_2 .textos2 .correo, .panel .registrarse .formulario2 .campos_2 .textos2 .password, .panel .registrarse .formulario2 .campos_2 .textos2 .repetir {
     width: 70%;
   }
+  .instrucciones .titulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+    margin-bottom: 0.1em;
+  }
+  .instrucciones .titulo h1 {
+    width: 90%;
+    margin: auto;
+    font-size: 1.3em;
+  }
+  .instrucciones .titulo p {
+    padding: 1em;
+    font-size: 0.5em;
+  }
+  .armar .hard, .armar .mod, .armar .boton {
+    width: 100%;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0em;
+  }
+  .armar .hard .hardwares, .armar .hard .modelos_procesador, .armar .hard .modelos_motherboard, .armar .hard .modelos_ram, .armar .hard .modelos_fuente, .armar .hard .modelos_disipador, .armar .hard .modelos_discoduro, .armar .hard .modelos_tarjeta, .armar .hard .modelos_chasis, .armar .hard .modelos_ventiladores, .armar .hard .modelos_refrigeracion, .armar .hard .buscar, .armar .mod .hardwares, .armar .mod .modelos_procesador, .armar .mod .modelos_motherboard, .armar .mod .modelos_ram, .armar .mod .modelos_fuente, .armar .mod .modelos_disipador, .armar .mod .modelos_discoduro, .armar .mod .modelos_tarjeta, .armar .mod .modelos_chasis, .armar .mod .modelos_ventiladores, .armar .mod .modelos_refrigeracion, .armar .mod .buscar, .armar .boton .hardwares, .armar .boton .modelos_procesador, .armar .boton .modelos_motherboard, .armar .boton .modelos_ram, .armar .boton .modelos_fuente, .armar .boton .modelos_disipador, .armar .boton .modelos_discoduro, .armar .boton .modelos_tarjeta, .armar .boton .modelos_chasis, .armar .boton .modelos_ventiladores, .armar .boton .modelos_refrigeracion, .armar .boton .buscar {
+    width: 100%;
+    margin: 8%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -410,18 +458,18 @@ footer {
     margin-left: 4em;
     margin-top: 8em;
   }
-  header .menu {
+  header .menu, header .menu2 {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     width: 100%;
     height: 31%;
   }
-  header .menu ul {
+  header .menu ul, header .menu2 ul {
     width: 100%;
     height: 1.4em;
   }
-  header .menu ul li {
+  header .menu ul li, header .menu2 ul li {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -430,6 +478,9 @@ footer {
             align-items: center;
     margin: 0.2em;
     font-size: 0.4em;
+  }
+  header .menu2 {
+    height: 100%;
   }
   .panel {
     display: -webkit-box;
@@ -445,6 +496,10 @@ footer {
   }
   .panel .iniciar h1, .panel .registrarse h1 {
     font-size: 4em;
+  }
+  .panel .iniciar .formulario, .panel .iniciar .formulario2, .panel .registrarse .formulario, .panel .registrarse .formulario2 {
+    height: 100%;
+    margin-bottom: 2em;
   }
   .instrucciones .titulo {
     display: -webkit-box;
@@ -465,6 +520,25 @@ footer {
   .instrucciones .titulo p {
     padding: 1em;
     font-size: 0.5em;
+  }
+  .armar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .armar .hard, .armar .mod, .armar .boton {
+    width: 100%;
+    margin-left: 0em;
+    margin-right: 1em;
+    padding: 0em;
+  }
+  .armar .hard .hardwares, .armar .hard .modelos_procesador, .armar .hard .modelos_motherboard, .armar .hard .modelos_ram, .armar .hard .modelos_fuente, .armar .hard .modelos_disipador, .armar .hard .modelos_discoduro, .armar .hard .modelos_tarjeta, .armar .hard .modelos_chasis, .armar .hard .modelos_ventiladores, .armar .hard .modelos_refrigeracion, .armar .hard .buscar, .armar .mod .hardwares, .armar .mod .modelos_procesador, .armar .mod .modelos_motherboard, .armar .mod .modelos_ram, .armar .mod .modelos_fuente, .armar .mod .modelos_disipador, .armar .mod .modelos_discoduro, .armar .mod .modelos_tarjeta, .armar .mod .modelos_chasis, .armar .mod .modelos_ventiladores, .armar .mod .modelos_refrigeracion, .armar .mod .buscar, .armar .boton .hardwares, .armar .boton .modelos_procesador, .armar .boton .modelos_motherboard, .armar .boton .modelos_ram, .armar .boton .modelos_fuente, .armar .boton .modelos_disipador, .armar .boton .modelos_discoduro, .armar .boton .modelos_tarjeta, .armar .boton .modelos_chasis, .armar .boton .modelos_ventiladores, .armar .boton .modelos_refrigeracion, .armar .boton .buscar {
+    width: 100%;
+    margin: 8%;
   }
 }
 /*# sourceMappingURL=estilo_tercero.css.map */
