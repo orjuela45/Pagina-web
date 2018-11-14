@@ -1,18 +1,39 @@
 <?php
-include 'cn.php';
-$nombre = $_POST["nombre"];
-$user = $_POST["user"];
-$correo = $_POST["correo"];
-$password = $_POST["password"];
-$repetir = $_POST["repetir"];
-$insertar = "INSERT INTO registro(Nombre, Usuario, Correo, Contraseña, Repetir) VALUES ('$nombre',
-'$user','$correo','$password','$repetir')";
+include 'conex.php';
+
+$nombreusuario = $_POST['nombreusuario'];
+$usuario = $_POST['usuario'];
+$clave = $_POST['clave'];
+$correo = $_POST['correo'];
+
+$insertar = "INSERT INTO login(nombreusuario, usuario, clave, correo) VALUES ('$nombreusuario',
+'$usuario','$clave','$correo')";
+
+$verificar_usuario = mysqli_query($conexion, "SELECT * FROM login WHERE usuario = '$usuario'");
+if(mysqli_num_rows($verificar_usuario)>0){
+    echo '<script>alert("El usuario ya esta registrado");
+              window.history.go(-1);
+          </script>';
+    exit;
+}
+$verificar_correo = mysqli_query($conexion, "SELECT * FROM login WHERE correo = '$correo'");
+if(mysqli_num_rows($verificar_correo)>0){
+    echo '<script>alert("El correo ya esta registrado");
+    window.history.go(-1);
+    </script>';
+    exit;
+}
+
 $resultado = mysqli_query($conexion, $insertar);
 if(!$resultado){
-    echo"no funciono";
+    echo '<script>alert("Error al registrarse");
+    window.history.go(-1);
+    </script>';
 }
 else{
-    echo"funciono";
+    echo '<script>alert("Usuario registrado exitosamente");
+    window.history.go(-1);
+    </script>';
 }
+
 mysqli_close($conexion);
-?>
