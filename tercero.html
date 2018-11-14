@@ -35,47 +35,84 @@
         <div class="registrarse">
             <h1>REGISTRARSE</h1>
             <form action="php/registrar.php" method="POST" class="formulario2">
-                <div class="campos">
+                <div class="campos_1">
                     <div class="textos1">
-                        <p>Nombre completo</p>
-                        <p>Usuario</p>
-                        <p>Correo</p>
-                    </div>
-                    <div class="campos1">
-                        <input type="text" class="nombre">
-                        <input type="text" class="user">
-                        <input type="email" class="correo">
-                    </div>
-                    <div class="textos2">
-                        <p>Contraseña</p>
-                        <p>Repetir contraseña</p>
-                    </div>
-                    <div class="campos2">
-                        <input type="password" class="password">
-                        <input type="password" class="repetir">
+                        <p>Nombre completo<input type="text" class="nombre"></p>
+                        <p>Usuario <input type="text" class="user"></p>
+                        <p>Correo <input type="email" class="correo"></p>
                     </div>
                 </div>
-                <input type="submit" class="enviar" value="REGISTRARSE">
+                <div class="campos_2">
+                    <div class="textos2">
+                        <p>Contraseña <input type="password" class="password"></p>
+                        <p>Repetir contraseña <input type="password" class="repetir"></p>
+                        <input type="submit" class="enviar" value="REGISTRARSE">
+                    </div>
+                </div>
             </form>
         </div>
     </section>
-    <section class="armar">
+    <section class="instrucciones">
         <div class="titulo">
-            <h1>COMPONENTES</h1>
+            <h1>INSTRUCCIONAS PARA ARMAR TU PC GAMER</h1>
+            <p>Para poder armar tu pc gamer tienes que seleccionar el hardware que quieras, luego te mostrara 
+            los modelos que tenemos reistrados con respecto al hardware que seleccionaste, este te mostrarra una 
+            imagen de como es el hardware y sus respectivas caracteristicas, mediante vas selecionando
+            los hardwares que tu quieras en tu pc la pagina te mostrara los hardwares que son compatibles con los que 
+            has seleccionado.  </p>
         </div>
-        <div class="componentes1">
-            <input type="button" class="procesador" value="PROCESADOR" >
-            <input type="button" class="motherboard" value="MOTHERBOARD">
-            <input type="button" class="ram" value="RAM">
-            <input type="button" class="fuente" value="FUENTE DE PODER">
-            <input type="button" class="tarjeta" value="TARJETA GRAFICA">
+    </section>
+    <section class="armar">
+        <div class="hard">
+            <select class="hardwares">
+                <option value="procesador">Procesador</option>
+                <option value="motherboard">Motherboard</option>
+                <option value="ram">RAM</option>
+                <option value="fuente">Fuentes de poder</option>
+                <option value="disipador">Disipador</option>
+                <option value="discoduro">Disco duro</option>
+                <option value="tarjeta">Tarjeta grafica</option>
+                <option value="chasis">Chasis</option>
+                <option value="ventiladores">Ventiladores</option>
+                <option value="refrigeracion">Refrigeración liquida</option>
+            </select>
         </div>
-        <div class="componentes2">
-            <input type="button" class="ventilador" value="VENTILADORES">
-            <input type="button" class="refri" value="REFRIGERACIÓN LIQUIDA">
-            <input type="button" class="disipador" value="DISIPADOR">
-            <input type="button" class="disco" value="DISCO DURO">
-            <input type="button" class="chasis" value="CHASIS">
+        <div class="mod">
+            <select class="modelos_procesador">
+                <option value="pro1">Intel Core i9-9960X</option>
+                <option value="pro2">Intel Core i9-9920X</option>
+                <option value="pro3">Intel Core i9-9820X</option>
+                <option value="pro4">Intel Core i7-8565U</option>
+                <option value="pro5">Intel Core i7-8086K</option>
+                <option value="pro6">Intel Core i7-8750H</option>
+                <option value="pro7">AMD Ryzen 7 Pro 2700X</option>
+                <option value="pro8">AMD Ryzen 5 Pro 1600</option>
+                <option value="pro9">AMD Ryzen 3 Pro 1300</option>
+                <option value="pro10">AMD Ryzen 3 Pro 2300U</option>
+            </select>
+            <select class="modelos_motherboard">
+                <option value="mot1">Z390 Phantom Gaming 9</option>
+                <option value="mot2">Z270 Extreme4</option>
+                <option value="mot3">Fatal1ty X470 Gaming K4</option>
+                <option value="mot4">Fatal1ty X399 Professional Gaming</option>
+                <option value="mot5">X399 Taichi</option>
+                <option value="mot6">TUF Z370-PLUS GAMING</option>
+                <option value="mot7">TUF B350M-PLUS GAMING</option>
+                <option value="mot8">ROG STRIX H270F GAMING</option>
+                <option value="mot9">PRIME H310-PLUS</option>
+                <option value="mot10">TUF B450-PLUS GAMING</option>
+            </select>
+            <select class="modelos_ram"></select>
+            <select class="modelos_fuente"></select>
+            <select class="modelos_disipador"></select>
+            <select class="modelos_discoduro"></select>
+            <select class="modelos_tarjeta"></select>
+            <select class="modelos_chasis"></select>
+            <select class="modelos_ventiladores"></select>
+            <select class="modelos_refrigeracion"></select>
+        </div>
+        <div class="boton">
+            <input type="button" class="buscar" value="BUSCAR">
         </div>
     </section>
     <footer>

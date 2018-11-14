@@ -78,7 +78,6 @@ header .menu ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50%;
 }
 
 .panel .iniciar {
@@ -160,6 +159,13 @@ header .menu ul li a:hover {
 .panel .registrarse .formulario2 {
   width: 100%;
   margin: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.panel .registrarse .formulario2 .campos_1, .panel .registrarse .formulario2 .campos_2 {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,17 +175,11 @@ header .menu ul li a:hover {
           flex-direction: column;
 }
 
-.panel .registrarse .formulario2 .campos {
+.panel .registrarse .formulario2 .campos_1 .textos1, .panel .registrarse .formulario2 .campos_1 .textos2, .panel .registrarse .formulario2 .campos_2 .textos1, .panel .registrarse .formulario2 .campos_2 .textos2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.panel .registrarse .formulario2 .textos1, .panel .registrarse .formulario2 .campos1, .panel .registrarse .formulario2 .textos2, .panel .registrarse .formulario2 .campos2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 25%;
+  width: 50%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -189,13 +189,13 @@ header .menu ul li a:hover {
           justify-content: center;
 }
 
-.panel .registrarse .formulario2 .textos1 p, .panel .registrarse .formulario2 .campos1 p, .panel .registrarse .formulario2 .textos2 p, .panel .registrarse .formulario2 .campos2 p {
+.panel .registrarse .formulario2 .campos_1 .textos1 p, .panel .registrarse .formulario2 .campos_1 .textos2 p, .panel .registrarse .formulario2 .campos_2 .textos1 p, .panel .registrarse .formulario2 .campos_2 .textos2 p {
   margin-left: 1em;
   font-size: 2.5em;
   color: #de1a1a;
 }
 
-.panel .registrarse .formulario2 .textos1 .nombre, .panel .registrarse .formulario2 .textos1 .user, .panel .registrarse .formulario2 .textos1 .correo, .panel .registrarse .formulario2 .textos1 .password, .panel .registrarse .formulario2 .textos1 .repetir, .panel .registrarse .formulario2 .textos1 .enviar, .panel .registrarse .formulario2 .campos1 .nombre, .panel .registrarse .formulario2 .campos1 .user, .panel .registrarse .formulario2 .campos1 .correo, .panel .registrarse .formulario2 .campos1 .password, .panel .registrarse .formulario2 .campos1 .repetir, .panel .registrarse .formulario2 .campos1 .enviar, .panel .registrarse .formulario2 .textos2 .nombre, .panel .registrarse .formulario2 .textos2 .user, .panel .registrarse .formulario2 .textos2 .correo, .panel .registrarse .formulario2 .textos2 .password, .panel .registrarse .formulario2 .textos2 .repetir, .panel .registrarse .formulario2 .textos2 .enviar, .panel .registrarse .formulario2 .campos2 .nombre, .panel .registrarse .formulario2 .campos2 .user, .panel .registrarse .formulario2 .campos2 .correo, .panel .registrarse .formulario2 .campos2 .password, .panel .registrarse .formulario2 .campos2 .repetir, .panel .registrarse .formulario2 .campos2 .enviar {
+.panel .registrarse .formulario2 .campos_1 .textos1 .nombre, .panel .registrarse .formulario2 .campos_1 .textos1 .user, .panel .registrarse .formulario2 .campos_1 .textos1 .correo, .panel .registrarse .formulario2 .campos_1 .textos1 .password, .panel .registrarse .formulario2 .campos_1 .textos1 .repetir, .panel .registrarse .formulario2 .campos_1 .textos1 .enviar, .panel .registrarse .formulario2 .campos_1 .textos2 .nombre, .panel .registrarse .formulario2 .campos_1 .textos2 .user, .panel .registrarse .formulario2 .campos_1 .textos2 .correo, .panel .registrarse .formulario2 .campos_1 .textos2 .password, .panel .registrarse .formulario2 .campos_1 .textos2 .repetir, .panel .registrarse .formulario2 .campos_1 .textos2 .enviar, .panel .registrarse .formulario2 .campos_2 .textos1 .nombre, .panel .registrarse .formulario2 .campos_2 .textos1 .user, .panel .registrarse .formulario2 .campos_2 .textos1 .correo, .panel .registrarse .formulario2 .campos_2 .textos1 .password, .panel .registrarse .formulario2 .campos_2 .textos1 .repetir, .panel .registrarse .formulario2 .campos_2 .textos1 .enviar, .panel .registrarse .formulario2 .campos_2 .textos2 .nombre, .panel .registrarse .formulario2 .campos_2 .textos2 .user, .panel .registrarse .formulario2 .campos_2 .textos2 .correo, .panel .registrarse .formulario2 .campos_2 .textos2 .password, .panel .registrarse .formulario2 .campos_2 .textos2 .repetir, .panel .registrarse .formulario2 .campos_2 .textos2 .enviar {
   margin-left: 2em;
   margin-right: 2em;
   margin: 1em;
@@ -203,8 +203,9 @@ header .menu ul li a:hover {
   font-family: 'Teko', sans-serif;
 }
 
-.panel .registrarse .formulario2 .enviar {
+.panel .registrarse .formulario2 .campos_1 .textos1 .enviar, .panel .registrarse .formulario2 .campos_1 .textos2 .enviar, .panel .registrarse .formulario2 .campos_2 .textos1 .enviar, .panel .registrarse .formulario2 .campos_2 .textos2 .enviar {
   margin: auto;
+  margin-top: 1em;
   background-color: rgba(102, 51, 153, 0);
   color: #de1a1a;
   border: 0.1em solid #de1a1a;
@@ -216,12 +217,12 @@ header .menu ul li a:hover {
           transition-duration: .5s;
 }
 
-.panel .registrarse .formulario2 .enviar:hover {
+.panel .registrarse .formulario2 .campos_1 .textos1 .enviar:hover, .panel .registrarse .formulario2 .campos_1 .textos2 .enviar:hover, .panel .registrarse .formulario2 .campos_2 .textos1 .enviar:hover, .panel .registrarse .formulario2 .campos_2 .textos2 .enviar:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.armar {
+.instrucciones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,10 +234,14 @@ header .menu ul li a:hover {
   margin-top: 5em;
 }
 
-.armar .titulo {
+.instrucciones .titulo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -246,30 +251,58 @@ header .menu ul li a:hover {
   color: #de1a1a;
 }
 
-.armar .componentes1, .armar .componentes2 {
+.instrucciones .titulo h1 {
+  margin: auto;
+}
+
+.instrucciones .titulo p {
+  padding: 1em 2em;
+  text-align: justify;
+  color: black;
+  font-size: .7em;
+}
+
+.armar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 2em;
-  margin-bottom: 1em;
   width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.armar .componentes1 .procesador, .armar .componentes1 .motherboard, .armar .componentes1 .ram, .armar .componentes1 .fuente, .armar .componentes1 .tarjeta, .armar .componentes1 .disco, .armar .componentes1 .ventilador, .armar .componentes1 .refri, .armar .componentes1 .disipador, .armar .componentes1 .chasis, .armar .componentes2 .procesador, .armar .componentes2 .motherboard, .armar .componentes2 .ram, .armar .componentes2 .fuente, .armar .componentes2 .tarjeta, .armar .componentes2 .disco, .armar .componentes2 .ventilador, .armar .componentes2 .refri, .armar .componentes2 .disipador, .armar .componentes2 .chasis {
+.armar .hard, .armar .mod, .armar .boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  margin-left: 5%;
+  margin-right: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.armar .hard .hardwares, .armar .hard .modelos_procesador, .armar .hard .modelos_motherboard, .armar .hard .modelos_ram, .armar .hard .modelos_fuente, .armar .hard .modelos_disipador, .armar .hard .modelos_discoduro, .armar .hard .modelos_tarjeta, .armar .hard .modelos_chasis, .armar .hard .modelos_ventiladores, .armar .hard .modelos_refrigeracion, .armar .hard .buscar, .armar .mod .hardwares, .armar .mod .modelos_procesador, .armar .mod .modelos_motherboard, .armar .mod .modelos_ram, .armar .mod .modelos_fuente, .armar .mod .modelos_disipador, .armar .mod .modelos_discoduro, .armar .mod .modelos_tarjeta, .armar .mod .modelos_chasis, .armar .mod .modelos_ventiladores, .armar .mod .modelos_refrigeracion, .armar .mod .buscar, .armar .boton .hardwares, .armar .boton .modelos_procesador, .armar .boton .modelos_motherboard, .armar .boton .modelos_ram, .armar .boton .modelos_fuente, .armar .boton .modelos_disipador, .armar .boton .modelos_discoduro, .armar .boton .modelos_tarjeta, .armar .boton .modelos_chasis, .armar .boton .modelos_ventiladores, .armar .boton .modelos_refrigeracion, .armar .boton .buscar {
+  margin: 1em;
+  padding: 0.8em;
+  width: 80%;
+  font-size: 2.5em;
+  border-radius: 0.5em;
+  border: 0.1pc solid #de1a1a69;
+  background-color: rgba(102, 51, 153, 0);
   font-family: 'Teko', sans-serif;
-  font-size: 2em;
-  margin: 1.2em 2em 0em;
-  width: 18%;
-  height: 70%;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  border-radius: 5px;
-  border: 1px solid black;
 }
 
-.armar .componentes1 .procesador:hover, .armar .componentes1 .motherboard:hover, .armar .componentes1 .ram:hover, .armar .componentes1 .fuente:hover, .armar .componentes1 .tarjeta:hover, .armar .componentes1 .disco:hover, .armar .componentes1 .ventilador:hover, .armar .componentes1 .refri:hover, .armar .componentes1 .disipador:hover, .armar .componentes1 .chasis:hover, .armar .componentes2 .procesador:hover, .armar .componentes2 .motherboard:hover, .armar .componentes2 .ram:hover, .armar .componentes2 .fuente:hover, .armar .componentes2 .tarjeta:hover, .armar .componentes2 .disco:hover, .armar .componentes2 .ventilador:hover, .armar .componentes2 .refri:hover, .armar .componentes2 .disipador:hover, .armar .componentes2 .chasis:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.armar .hard .hardwares:hover, .armar .hard .modelos_procesador:hover.modelos_procesador:hover, .armar .hard .modelos_motherboard:hover, .armar .hard .modelos_ram:hover, .armar .hard .modelos_fuente:hover, .armar .hard .modelos_disipador:hover, .armar .hard .modelos_discoduro:hover, .armar .hard .modelos_tarjeta:hover, .armar .hard .modelos_chasis:hover, .armar .hard .modelos_ventiladores:hover, .armar .hard .modelos_refrigeracion:hover, .armar .hard .buscar:hover, .armar .mod .hardwares:hover, .armar .mod .modelos_procesador:hover.modelos_procesador:hover, .armar .mod .modelos_motherboard:hover, .armar .mod .modelos_ram:hover, .armar .mod .modelos_fuente:hover, .armar .mod .modelos_disipador:hover, .armar .mod .modelos_discoduro:hover, .armar .mod .modelos_tarjeta:hover, .armar .mod .modelos_chasis:hover, .armar .mod .modelos_ventiladores:hover, .armar .mod .modelos_refrigeracion:hover, .armar .mod .buscar:hover, .armar .boton .hardwares:hover, .armar .boton .modelos_procesador:hover.modelos_procesador:hover, .armar .boton .modelos_motherboard:hover, .armar .boton .modelos_ram:hover, .armar .boton .modelos_fuente:hover, .armar .boton .modelos_disipador:hover, .armar .boton .modelos_discoduro:hover, .armar .boton .modelos_tarjeta:hover, .armar .boton .modelos_chasis:hover, .armar .boton .modelos_ventiladores:hover, .armar .boton .modelos_refrigeracion:hover, .armar .boton .buscar:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 footer {
@@ -323,6 +356,30 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     margin: 0.5em;
+  }
+  .panel .iniciar h1, .panel .registrarse h1 {
+    font-size: 5em;
+  }
+  .panel .iniciar .formulario, .panel .registrarse .formulario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .panel .iniciar .formulario .enviar, .panel .registrarse .formulario .enviar {
+    margin-top: 1em;
+  }
+  .panel .iniciar .formulario2 .campos_1 .textos1, .panel .iniciar .formulario2 .campos_1 .textos2, .panel .iniciar .formulario2 .campos_2 .textos1, .panel .iniciar .formulario2 .campos_2 .textos2, .panel .registrarse .formulario2 .campos_1 .textos1, .panel .registrarse .formulario2 .campos_1 .textos2, .panel .registrarse .formulario2 .campos_2 .textos1, .panel .registrarse .formulario2 .campos_2 .textos2 {
+    width: 100%;
+  }
+  .panel .iniciar .formulario2 .campos_1 .textos1 p, .panel .iniciar .formulario2 .campos_1 .textos2 p, .panel .iniciar .formulario2 .campos_2 .textos1 p, .panel .iniciar .formulario2 .campos_2 .textos2 p, .panel .registrarse .formulario2 .campos_1 .textos1 p, .panel .registrarse .formulario2 .campos_1 .textos2 p, .panel .registrarse .formulario2 .campos_2 .textos1 p, .panel .registrarse .formulario2 .campos_2 .textos2 p {
+    font-size: 2em;
+  }
+  .panel .iniciar .formulario2 .campos_1 .textos1 .nombre, .panel .iniciar .formulario2 .campos_1 .textos1 .user, .panel .iniciar .formulario2 .campos_1 .textos1 .correo, .panel .iniciar .formulario2 .campos_1 .textos1 .password, .panel .iniciar .formulario2 .campos_1 .textos1 .repetir, .panel .iniciar .formulario2 .campos_1 .textos2 .nombre, .panel .iniciar .formulario2 .campos_1 .textos2 .user, .panel .iniciar .formulario2 .campos_1 .textos2 .correo, .panel .iniciar .formulario2 .campos_1 .textos2 .password, .panel .iniciar .formulario2 .campos_1 .textos2 .repetir, .panel .iniciar .formulario2 .campos_2 .textos1 .nombre, .panel .iniciar .formulario2 .campos_2 .textos1 .user, .panel .iniciar .formulario2 .campos_2 .textos1 .correo, .panel .iniciar .formulario2 .campos_2 .textos1 .password, .panel .iniciar .formulario2 .campos_2 .textos1 .repetir, .panel .iniciar .formulario2 .campos_2 .textos2 .nombre, .panel .iniciar .formulario2 .campos_2 .textos2 .user, .panel .iniciar .formulario2 .campos_2 .textos2 .correo, .panel .iniciar .formulario2 .campos_2 .textos2 .password, .panel .iniciar .formulario2 .campos_2 .textos2 .repetir, .panel .registrarse .formulario2 .campos_1 .textos1 .nombre, .panel .registrarse .formulario2 .campos_1 .textos1 .user, .panel .registrarse .formulario2 .campos_1 .textos1 .correo, .panel .registrarse .formulario2 .campos_1 .textos1 .password, .panel .registrarse .formulario2 .campos_1 .textos1 .repetir, .panel .registrarse .formulario2 .campos_1 .textos2 .nombre, .panel .registrarse .formulario2 .campos_1 .textos2 .user, .panel .registrarse .formulario2 .campos_1 .textos2 .correo, .panel .registrarse .formulario2 .campos_1 .textos2 .password, .panel .registrarse .formulario2 .campos_1 .textos2 .repetir, .panel .registrarse .formulario2 .campos_2 .textos1 .nombre, .panel .registrarse .formulario2 .campos_2 .textos1 .user, .panel .registrarse .formulario2 .campos_2 .textos1 .correo, .panel .registrarse .formulario2 .campos_2 .textos1 .password, .panel .registrarse .formulario2 .campos_2 .textos1 .repetir, .panel .registrarse .formulario2 .campos_2 .textos2 .nombre, .panel .registrarse .formulario2 .campos_2 .textos2 .user, .panel .registrarse .formulario2 .campos_2 .textos2 .correo, .panel .registrarse .formulario2 .campos_2 .textos2 .password, .panel .registrarse .formulario2 .campos_2 .textos2 .repetir {
+    width: 70%;
   }
 }
 
@@ -388,6 +445,26 @@ footer {
   }
   .panel .iniciar h1, .panel .registrarse h1 {
     font-size: 4em;
+  }
+  .instrucciones .titulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+  }
+  .instrucciones .titulo h1 {
+    width: 90%;
+    margin: auto;
+    font-size: 1em;
+  }
+  .instrucciones .titulo p {
+    padding: 1em;
+    font-size: 0.5em;
   }
 }
 /*# sourceMappingURL=estilo_tercero.css.map */

@@ -55,7 +55,6 @@ header{
     margin-top: 4em;
     width: 100%;
     display: flex;
-    height: 50%;
     .iniciar{
         display: flex;
         flex-direction: column;
@@ -110,80 +109,99 @@ header{
         .formulario2{
             width: 100%;
             margin: auto;
-            display: flex;
-            flex-direction: column;  
-            .campos{
+            display: inline-flex    ;
+            .campos_1,.campos_2{
+                width: 50%;
                 display: flex;
-            } 
-            .textos1, .campos1, .textos2, .campos2{
-                display: flex;
-                width: 25%;
                 flex-direction: column;
-                justify-content: center;
-                p{
-                    margin-left: 1em;
-                    font-size: 2.5em;
-                    color: #de1a1a;
+                .textos1, .textos2{
+                    display: flex;
+                    width: 50%;
+                    flex-direction: column;
+                    justify-content: center;
+                    p{
+                        margin-left: 1em;
+                        font-size: 2.5em;
+                        color: #de1a1a;
+                    }
+                    .nombre, .user, .correo, .password, .repetir, .enviar{
+                        margin-left: 2em;
+                        margin-right: 2em;
+                        margin: 1em;
+                        width: 20em;
+                        font-family: 'Teko', sans-serif;
+                    }
+                    .enviar{
+                        margin: auto;
+                        margin-top: 1em;
+                        background-color: rgba(102, 51, 153, 0);
+                        color: #de1a1a;
+                        border: 0.1em solid #de1a1a;
+                        width: 8em;
+                        height: 2.5em;
+                        font-family: 'Teko', sans-serif;
+                        font-size: 1.5em;
+                        transition-duration: .5s;
+                    }
+                    .enviar:hover{
+                        transform: scale(1.1)
+                    }
                 }
-                .nombre, .user, .correo, .password, .repetir, .enviar{
-                    margin-left: 2em;
-                    margin-right: 2em;
-                    margin: 1em;
-                    width: 20em;
-                    font-family: 'Teko', sans-serif;
-                }
-            }
-            .enviar{
-                margin: auto;
-                background-color: rgba(102, 51, 153, 0);
-                color: #de1a1a;
-                border: 0.1em solid #de1a1a;
-                width: 8em;
-                height: 2.5em;
-                font-family: 'Teko', sans-serif;
-                font-size: 1.5em;
-                transition-duration: .5s;
-            }
-            .enviar:hover{
-                transform: scale(1.1)
-            }
+            } 
         }
     }
 
 }
-.armar{
+.instrucciones{
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-top: 5em;
     .titulo{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         font-size: 3em;
         margin-top: 0.5em;
         margin-bottom: -1em;
-        color: #de1a1a;;
+        color: #de1a1a;
+        h1{
+            margin: auto;
+        }
+        p{
+            padding: 1em 2em;
+            text-align: justify;
+            color: black;
+            font-size: .7em;
+        }
     }
-    .componentes1, .componentes2{
+}
+.armar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .hard, .mod, .boton{
         display: flex;
-        margin-top: 2em;
-        margin-bottom: 1em;
-        width: 100%;
-        .procesador, .motherboard, .ram, .fuente, .tarjeta, .disco, .ventilador, .refri, .disipador, .chasis{
+        width: 30%;
+        margin-left: 5%;
+        margin-right: 5%;
+        justify-content: center;
+        align-items: center;
+        .hardwares,.modelos_procesador,.modelos_motherboard,.modelos_ram,.modelos_fuente,.modelos_disipador,.modelos_discoduro,.modelos_tarjeta,.modelos_chasis,.modelos_ventiladores,.modelos_refrigeracion, .buscar{
+            margin: 1em;
+            padding: 0.8em;
+            width: 80%;
+            font-size: 2.5em;
+            border-radius: 0.5em;
+            border: 0.1pc solid #de1a1a69;
+            background-color: rgba(102, 51, 153, 0);
             font-family: 'Teko', sans-serif;
-            font-size: 2em;
-            margin: 1.2em 2em 0em;
-            width: 18%;
-            height: 70%;
             transition-duration: 0.5s;
-            border-radius: 5px;
-            border: 1px solid black;
         }
-        .procesador:hover, .motherboard:hover, .ram:hover, .fuente:hover, .tarjeta:hover, .disco:hover, .ventilador:hover, .refri:hover, .disipador:hover, .chasis:hover{
-            transform: scale(1.2);
+        .hardwares:hover,.modelos_procesador:hover.modelos_procesador:hover,.modelos_motherboard:hover,.modelos_ram:hover,.modelos_fuente:hover,.modelos_disipador:hover,.modelos_discoduro:hover,.modelos_tarjeta:hover,.modelos_chasis:hover,.modelos_ventiladores:hover,.modelos_refrigeracion:hover, .buscar:hover{
+            transform: scale(1.1);
         }
     }
-
 }
 footer{
     background: black;
@@ -218,6 +236,33 @@ footer{
                 display: inline-flex;
                 align-items: center;
                 margin: 0.5em;
+            }
+        }
+    }
+    .panel{
+        .iniciar, .registrarse{
+            h1{
+                font-size: 5em;
+            }
+            .formulario{
+                display: flex;
+                flex-direction: column;
+                .enviar{
+                    margin-top: 1em;
+                }
+            }
+            .formulario2{
+                .campos_1, .campos_2{
+                    .textos1, .textos2{
+                        width: 100%;
+                        p{
+                            font-size: 2em;
+                        }
+                        .nombre,.user,.correo,.password,.repetir{
+                            width: 70%;
+                        }
+                    }
+                }
             }
         }
     }
@@ -262,6 +307,23 @@ footer{
             width: 100%;
             h1{
                 font-size: 4em;
+            }
+        }
+    }
+    .instrucciones{
+        .titulo{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            h1{
+                width: 90%;
+                margin: auto;
+                font-size: 1em;
+            }
+            p{
+                padding: 1em;
+                font-size: 0.5em;
             }
         }
     }
